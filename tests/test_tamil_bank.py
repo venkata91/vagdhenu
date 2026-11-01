@@ -44,7 +44,8 @@ def test_clip_overrides_entry(tmp_path):
     ("santhai", {"ref_text": "॥ 1 ॥"}, {}, r"tamil ref 'santhai': ref_text is not Tamil.*empty"),
     ("santhai", {"sec_per_syll": None}, {}, r"tamil ref 'santhai': sec_per_syll not measured.*ta_santhai\.wav"),
     ("santhai", {"sec_per_syll": 0}, {}, r"tamil ref 'santhai': sec_per_syll not measured"),
-    ("santhai", {}, {"ref_wav": "nowhere.wav"}, r"tamil ref 'santhai': wav not found: nowhere\.wav"),
+    ("santhai", {}, {"ref_wav": "nowhere.wav", "ref_text": "வடிவாய்"}, r"tamil ref 'santhai': wav not found: nowhere\.wav"),
+    ("santhai", {}, {"ref_wav": "ta_santhai.wav"}, r"tamil ref 'santhai': ref_wav override needs ref_text \(ta_santhai\.wav\)"),
 ])
 def test_resolve_errors_name_key_and_path(tmp_path, key, over, clip, pat):
     bank = tmp_bank(tmp_path, **over)

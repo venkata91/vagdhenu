@@ -29,7 +29,8 @@ def _has_tamil_letter(s):
 
 
 def resolve_ref(bank, bank_dir, clip):
-    """Reference for a Tamil clip: bank entry clip["meter"], with clip ref_wav / ref_text / sps overriding it.
+    """Reference for a Tamil clip: bank entry clip["meter"], with clip ref_wav / ref_text / sps overriding it
+    (a ref_wav override must bring its own ref_text).
     A clip sps of 0 means speed-based duration (as for Sanskrit); the entry's sec_per_syll must be > 0."""
     key = clip["meter"]
     e = bank.get(key)
@@ -37,6 +38,8 @@ def resolve_ref(bank, bank_dir, clip):
         raise TamilBankError(f"tamil ref '{key}': no such entry in the Tamil bank")
     if e.get("lang") != "ta":
         raise TamilBankError(f"tamil ref '{key}': entry is not lang 'ta'")
+    if "ref_wav" in clip and "ref_text" not in clip:   # the entry's transcript can't describe other audio
+        raise TamilBankError(f"tamil ref '{key}': ref_wav override needs ref_text ({clip['ref_wav']})")
     wav = clip["ref_wav"] if "ref_wav" in clip else os.path.join(bank_dir, e.get("wav", ""))
     if not os.path.isfile(wav):
         raise TamilBankError(f"tamil ref '{key}': wav not found: {wav}")

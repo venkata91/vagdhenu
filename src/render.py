@@ -252,21 +252,19 @@ def render_clip_ta(clip):
     GAPS = [np.zeros(int(a.gap*SR), dtype=np.float32) for _ in PIECES]
     bseg = []
     for i, p in enumerate(PIECES):
-        au = None
+        _fixd = (ref_len + NSYLL[i]*ref.sps) if ref.sps > 0 else None
         for att in range(4):
             torch.manual_seed(seed + att)
-            _fixd = (ref_len + NSYLL[i]*ref.sps) if ref.sps > 0 else None
             w, sr, _ = infer_process(ref_audio, ref_t, p, cfm, cap, mel_spec_type="vocos", speed=spd, nfe_step=a.nfe, cfg_strength=a.cfg, device="cuda", fix_duration=_fixd)
             w = np.array(w, dtype=np.float32)
             if np.abs(w).max() > 1.5: w = w/32768.0
-            if float(np.sqrt((w**2).mean())) > 0.04: au = w; break
-        if au is None: au = w
+            if float(np.sqrt((w**2).mean())) > 0.04: break   # retry near-silent takes
         y = bvgan(cap.last); mx = np.abs(y).max(); y = y/mx*0.97 if mx > 1 else y
         bseg.append(y)
     if a.dump_raw:
         os.makedirs(a.dump_raw, exist_ok=True)
         sf.write(os.path.join(a.dump_raw, clip["id"] + "_raw.wav"), np.concatenate(bseg), SR)
-    final = _stitch(bseg, GAPS, fric=False, halant=False)
+    final = _stitch(bseg, GAPS)
     sf.write(out, final, SR)
     return {"id": clip["id"], "dur": round(len(final)/SR, 3), "pieces": len(PIECES), "seed": seed, "out": out, "lang": "ta"}
 

@@ -51,9 +51,10 @@ def load_config(path=None):
         if k in ("gaps", "refs"):
             if not isinstance(v, dict):
                 raise PlanConfigError(f"{path}: '{k}' must be an object")
-            for kk in v:
-                if k == "gaps" and kk not in cfg["gaps"]:
-                    raise PlanConfigError(f"{path}: unknown gap kind '{kk}' (expected {', '.join(cfg['gaps'])})")
+            if k == "gaps":
+                for kk in v:
+                    if kk not in cfg["gaps"]:
+                        raise PlanConfigError(f"{path}: unknown gap kind '{kk}' (expected {', '.join(cfg['gaps'])})")
             cfg[k].update(v)
         else:
             cfg[k] = v
@@ -124,7 +125,8 @@ def build_plan(work, mode, config, unit_dir):
                 for role, rep in _roles(mode, config["santhai_repeats"]):
                     group = None
                     if alt:
-                        group = ("A" if si % 2 else "B") if config["alternate_unit"] == "segment" else ("A" if k % 2 else "B")
+                        turn = si if config["alternate_unit"] == "segment" else k
+                        group = "A" if turn % 2 else "B"
                     uid = f"{wid}_{tag}_s{si:02d}_{role}" + (f"_r{rep}" if role == "shishya" else "") \
                         + (f"_g{group}" if group else "") + ("_p2" if ps == 2 else "")
                     us.append({"id": uid, "seg": si, "role": role, "group": group, "repeat": rep, "pass": ps,

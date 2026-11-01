@@ -99,3 +99,37 @@ def test_sanskrit_clip_still_uses_sanskrit_path(tmp_path):
 def test_no_gpu_module_is_really_imported():
     for m in ("torch", "torchaudio", "f5_tts", "bigvgan"):
         assert m not in sys.modules or not hasattr(sys.modules[m], "__file__") or sys.modules[m].__file__ is None
+
+
+def test_out_dir_is_created_before_inference(tmp_path):
+    mod, st = load_render(tmp_path / "r", ["--bank_ta", tmp_bank_ta(tmp_path), "--outdir", ""])
+    out = tmp_path / "new" / "units" / "x.wav"
+    real = mod.infer_process
+    def infer(*a, **k):
+        assert out.parent.is_dir()
+        return real(*a, **k)
+    mod.infer_process = infer
+    r = mod.render_clip(clip(out=str(out)))
+    assert r["out"] == str(out) and out.exists()
+
+
+def test_readme_sequence_runs_into_fresh_dir(tmp_path):
+    """README "Running it": plan CLI -> render.py (stubbed) -> assemble CLI, nothing pre-created."""
+    import subprocess
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    fresh = tmp_path / "fresh"
+    r = subprocess.run([sys.executable, os.path.join(repo, "src", "tamil_plan.py"), "--fixture",
+                        os.path.join(repo, "examples", "tamil", "tiruppallandu.txt"), "--mode", "single",
+                        "--unit_dir", str(fresh / "units"), "--plan_out", str(fresh / "p.json"),
+                        "--shard_out", str(fresh / "s.json")], capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    mod, st = load_render(tmp_path / "r", ["--outdir", "", "--bank_ta", tmp_bank_ta(tmp_path)])
+    shard = json.load(open(fresh / "s.json", encoding="utf-8"))
+    assert len(shard) == 91
+    for c in shard:   # the harness patches bvgan after import, so drive render_clip per clip
+        mod.render_clip(c)
+    r = subprocess.run([sys.executable, os.path.join(repo, "src", "tamil_assemble.py"), "--plan", str(fresh / "p.json"),
+                        "--units_dir", str(fresh / "units"), "--outdir", str(fresh / "tamil")],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    assert len([f for f in os.listdir(fresh / "tamil") if f.endswith(".wav")]) == 12

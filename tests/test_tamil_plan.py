@@ -161,3 +161,11 @@ def test_committed_example_matches_fresh_cli_output(tmp_path):
     for got, ref in (("s.json", "tiruppallandu.santhai.shard.json"), ("p.json", "tiruppallandu.santhai.plan.json")):
         assert (tmp_path / got).read_bytes() == open(os.path.join(REPO, "examples", "tamil", ref), "rb").read()
     assert len(json.loads((tmp_path / "s.json").read_text())) == 273
+
+
+def test_cli_creates_unit_dir(tmp_path):
+    unit_dir = tmp_path / "fresh" / "units"
+    r = run_cli("--fixture", FIXTURE, "--mode", "single", "--unit_dir", str(unit_dir),
+                "--shard_out", str(tmp_path / "s.json"), "--plan_out", str(tmp_path / "p.json"))
+    assert r.returncode == 0, r.stderr
+    assert unit_dir.is_dir()

@@ -184,6 +184,7 @@ def main(argv=None):
     base = os.path.join("out", f"{plan['work_id']}.{a.mode}")
     shard_out = a.shard_out or base + ".shard.json"; plan_out = a.plan_out or base + ".plan.json"
     _write(shard_out, dumps(shard)); _write(plan_out, dumps(plan))
+    os.makedirs(a.unit_dir, exist_ok=True)
     print(f"[tamil_plan] {plan['work_id']} {a.mode}: {len(plan['pasurams'])} pāsurams, {len(shard)} units "
           f"-> {shard_out}, {plan_out}")
 

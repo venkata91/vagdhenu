@@ -243,6 +243,7 @@ def render_clip_ta(clip):
     if _ta_bank is None: _ta_bank = TB.load_bank(a.bank_ta)
     seed = int(clip["seed"])
     out = os.path.join(a.outdir, clip["id"] + ".wav") if a.outdir else clip["out"]
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)   # before inference, so a missing dir can't waste GPU work
     ref = TB.resolve_ref(_ta_bank, os.path.dirname(a.bank_ta), clip)
     spd = float(clip.get("speed", a.speed))
     ref_audio, ref_t = preprocess_ref_audio_text(ref.wav, ref.model_ref_text, clip_short=True)

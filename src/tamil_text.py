@@ -4,7 +4,7 @@ Fixture format (UTF-8, NFC): '#' comments, '@key: value' header before the first
 '[invocation]' / '[taniyan N]' / '[pasuram N]' / '[adivaravu]' / '[colophon]'. In pasuram/taniyan sections
 each non-blank line is one recitation segment (the edition's ⋆-segment); '‡' may only open the first
 segment; a trailing '॥ N ॥' must equal the section number. See README "Tamil (experimental)"."""
-import re, unicodedata
+import os, re, unicodedata
 from dataclasses import dataclass, field
 
 KINDS = ("invocation", "taniyan", "pasuram", "adivaravu", "colophon")
@@ -117,3 +117,38 @@ def parse_text(text, path="<text>"):
     if cur is None:
         raise err(len(lines), "no sections")
     return Work(meta=meta, path=path, sections=sections)
+
+
+# ── model text (what reaches IndicF5): native Tamil script, no transliteration, no lexicon ──────────
+_HERE = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(_HERE, "reference_bank", "vocab.txt"), encoding="utf-8") as _f:
+    VOCAB = frozenset(t for t in _f.read().split("\n") if len(t) == 1)
+# Tamil model text may only use Tamil-block vocab letters: Devanagari/Latin are in the IndicF5 vocab but
+# inside a Tamil segment they mean mixed-script input, which is rejected rather than read by the model.
+ALLOWED = frozenset(c for c in VOCAB if "\u0B80" <= c <= "\u0BFF")
+
+MARKUP = set("⋆‡॥।|!?,.;\"'()–—-")
+_DIGITS = re.compile(r"[0-9\u0BE6-\u0BEF\u0966-\u096F]")
+# OOV hook: ஶ is not in the IndicF5 vocab -> nearest sibilant ஸ; Grantha-convention sub/superscript
+# numerals (க₃ = ga) are dropped (native Tamil reading); Latin ':' (visarga stand-in, e.g. நம:) dropped.
+_OOV_MAP = str.maketrans({"ஶ": "ஸ", ":": None,
+                          **{c: None for c in "₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹"}})
+
+
+class TamilTextError(ValueError):
+    pass
+
+
+def model_text(s, where=""):
+    t = unicodedata.normalize("NFC", s)
+    t = _END_NUM.sub(" ", t)
+    t = "".join(" " if c in MARKUP else c for c in t)
+    t = _DIGITS.sub(" ", t)
+    t = t.translate(_OOV_MAP)
+    t = re.sub(r"\s+", " ", t).strip()
+    if not t:
+        raise TamilTextError(f"{where}: empty after normalisation")
+    bad = sorted({c for c in t if c != " " and c not in ALLOWED})
+    if bad:
+        raise TamilTextError(f"{where}: unsupported characters " + ", ".join(f"U+{ord(c):04X} '{c}'" for c in bad))
+    return t

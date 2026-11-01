@@ -31,11 +31,13 @@ class Stubs:
         self.infer_calls = []
         self.preprocess_calls = []
         self.stitch_calls = []
+        self.infer_devices = []
 
     def infer_process(self, ref_audio, ref_text, gen_text, model, vocoder, mel_spec_type="vocos", speed=1.0,
                       nfe_step=32, cfg_strength=2.0, device=None, fix_duration=None, **kw):
         self.infer_calls.append({"ref_audio": os.path.basename(ref_audio), "ref_text": ref_text,
                                  "gen_text": gen_text, "fix_duration": fix_duration, "speed": speed})
+        self.infer_devices.append(device)
         return np.full(24000, 0.1, np.float32), 24000, None
 
     def preprocess_ref_audio_text(self, ref_audio, ref_text, clip_short=True, **kw):

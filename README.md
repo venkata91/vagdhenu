@@ -31,9 +31,9 @@ scripts/     env setup + weight download
 ```
 
 ## Install & quickstart
-Requires **Python 3.10** and a **CUDA 12.1 GPU**.
+Requires **Python 3.10**. Inference runs on a **CUDA 12.1 GPU** (validated in production), on **Apple silicon (MPS)**, or on **CPU** (slow). `render.py` and `render_production.py` take `--device auto|cuda|mps|cpu`. The default `auto` picks cuda, then mps, then cpu. MPS and CPU are untested for output quality, and ops MPS lacks fall back to CPU.
 ```bash
-bash scripts/setup.sh    # torch+cu121, deps, BigVGAN, and downloads weights -> models/
+bash scripts/setup.sh    # torch (cu121 on Linux, MPS wheels on macOS), deps, BigVGAN, weights -> models/
 # render a Devanagari verse (+ meter) to a chanted wav:
 python src/render.py --shard examples/sample_shard.json --results /tmp/res.json --outdir out
 # -> out/sample_anushtubh.wav
@@ -74,7 +74,7 @@ python src/tamil_bank.py sps --wav src/reference_bank/ta_santhai.wav --ref_text 
 # {"dur_s": …, "nsyll": …, "sps": …, "warning": null}   (duration / Tamil syllables x 1.10; warns over 15 s)
 ```
 
-**Running it.** Planning and assembly run on CPU; only `render.py` needs the GPU.
+**Running it.** Planning and assembly run on CPU; `render.py` uses a GPU when one is available (`--device mps` on a Mac).
 ```bash
 # 1. CPU: fixture -> plan + shard (examples/tamil/ has the santhai output committed)
 python src/tamil_plan.py --fixture examples/tamil/tiruppallandu.txt --mode santhai \

@@ -12,7 +12,7 @@ SMALL = ("@title: t\n@work_id: w\n@source: s\n[pasuram 1]\nபல்லாண்
 def make(tmp_path, mode="santhai", skip=None, **cfg):
     config = TP.load_config(None); config.update(cfg)
     plan, _ = TP.build_plan(TT.parse_text(SMALL, "small.txt"), mode, config, str(tmp_path / "u"))
-    rng = np.random.default_rng(0); (tmp_path / "u").mkdir(exist_ok=True); lens = {}
+    rng = np.random.default_rng(0); (tmp_path / "u").mkdir(parents=True, exist_ok=True); lens = {}
     for p in plan["pasurams"]:
         for u in p["units"]:
             if u["id"] == skip:
@@ -79,9 +79,21 @@ def test_cli_writes_wavs_and_manifest(tmp_path):
                         str(tmp_path / "p.json"), "--units_dir", str(tmp_path / "u"), "--outdir", str(tmp_path / "o")],
                        capture_output=True, text=True)
     assert r.returncode == 0, r.stderr
-    assert sorted(os.listdir(tmp_path / "o")) == ["w.santhai.manifest.json", "w_1.wav", "w_2.wav"]
+    assert sorted(os.listdir(tmp_path / "o")) == ["w.santhai.manifest.json", "w_1.santhai.wav", "w_2.santhai.wav"]
     os.remove(tmp_path / "u" / "w_1_s01_acharya.wav")
     r = subprocess.run([sys.executable, os.path.join(REPO, "src", "tamil_assemble.py"), "--plan",
                         str(tmp_path / "p.json"), "--units_dir", str(tmp_path / "u"), "--outdir", str(tmp_path / "o2")],
                        capture_output=True, text=True)
     assert r.returncode == 1 and "tamil_assemble: error: unit w_1_s01_acharya" in r.stderr
+
+
+def test_two_modes_share_an_outdir(tmp_path):
+    p1, _ = make(tmp_path / "a", "santhai")
+    p2, _ = make(tmp_path / "b", "goshti")
+    m1 = TA.assemble(p1, str(tmp_path / "a" / "u"), str(tmp_path / "o"))
+    m2 = TA.assemble(p2, str(tmp_path / "b" / "u"), str(tmp_path / "o"))
+    assert not {p["file"] for p in m1["pasurams"]} & {p["file"] for p in m2["pasurams"]}
+    for m in (m1, m2):
+        assert m == json.load(open(tmp_path / "o" / f"w.{m['mode']}.manifest.json", encoding="utf-8"))
+        for p in m["pasurams"]:
+            assert sf.info(str(tmp_path / "o" / p["file"])).frames == p["samples"]

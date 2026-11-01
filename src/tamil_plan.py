@@ -140,7 +140,7 @@ def build_plan(work, mode, config, unit_dir):
                           "no_sandhi": True, "out": os.path.join(unit_dir, u["id"] + ".wav"), "lang": "ta",
                           "mode": mode, "role": u["role"], "group": u["group"], "repeat": u["repeat"],
                           "pasuram": sec.num, "seg": u["seg"], "pass": u["pass"]})
-        pasurams.append({"kind": sec.kind, "num": sec.num, "marked": sec.marked, "file": f"{wid}_{tag}.wav",
+        pasurams.append({"kind": sec.kind, "num": sec.num, "marked": sec.marked, "file": f"{wid}_{tag}.{mode}.wav",
                          "segments": segs, "units": us})
     plan = {"format": FORMAT, "work_id": wid, "title": work.meta["title"], "fixture": os.path.basename(work.path),
             "mode": mode, "sr": SR, "config": config, "pasurams": pasurams}

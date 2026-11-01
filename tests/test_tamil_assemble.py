@@ -97,3 +97,26 @@ def test_two_modes_share_an_outdir(tmp_path):
         assert m == json.load(open(tmp_path / "o" / f"w.{m['mode']}.manifest.json", encoding="utf-8"))
         for p in m["pasurams"]:
             assert sf.info(str(tmp_path / "o" / p["file"])).frames == p["samples"]
+
+
+def test_each_pasuram_is_written_before_the_next_is_read(tmp_path, monkeypatch):
+    plan, _ = make(tmp_path)
+    events, real_read, real_write = [], TA.sf.read, TA.sf.write
+    monkeypatch.setattr(TA.sf, "read", lambda p, *a, **k: events.append(("read", os.path.basename(p))) or real_read(p, *a, **k))
+    monkeypatch.setattr(TA.sf, "write", lambda p, *a, **k: events.append(("write", os.path.basename(p))) or real_write(p, *a, **k))
+    TA.assemble(plan, str(tmp_path / "u"), str(tmp_path / "o"))
+    first_p2_read = next(i for i, e in enumerate(events) if e == ("read", "w_2_s01_acharya.wav"))
+    assert ("write", "w_1.santhai.wav.partial") in events[:first_p2_read]
+
+
+def test_write_failure_mid_way_leaves_nothing(tmp_path, monkeypatch):
+    plan, _ = make(tmp_path)
+    real_write = TA.sf.write
+    def write(p, *a, **k):
+        if os.path.basename(p).startswith("w_2"):
+            raise OSError("disk full")
+        return real_write(p, *a, **k)
+    monkeypatch.setattr(TA.sf, "write", write)
+    with pytest.raises(OSError, match="disk full"):
+        TA.assemble(plan, str(tmp_path / "u"), str(tmp_path / "o"))
+    assert _no_outputs(tmp_path / "o")

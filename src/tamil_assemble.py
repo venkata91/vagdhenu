@@ -2,7 +2,8 @@
 
 pāsuram wav = concat over its units of [unit audio, silence(gap_after_s)] (the trailing pāsuram-end gap is
 kept so pāsurams can be played back to back). Every unit is validated (exists, 24 kHz, mono) before anything
-is written; outputs go to *.partial first and are moved into place with os.replace.
+is written; each pāsuram is then built and written to *.partial in turn (one in memory at a time), and all
+outputs are moved into place with os.replace only once every one has been written.
 
   python src/tamil_assemble.py --plan out/x.plan.json --units_dir out/tamil_units --outdir out/tamil"""
 import os, sys, json, argparse
@@ -36,39 +37,35 @@ def _check_units(plan, units_dir):
 
 def assemble(plan, units_dir, outdir):
     paths = _check_units(plan, units_dir)
-    wavs, entries = [], []
-    for p in plan["pasurams"]:
-        parts, units, pos = [], [], 0
-        for u in p["units"]:
-            y, _ = sf.read(paths[u["id"]], dtype="float32")
-            gap = np.zeros(round(u["gap_after_s"] * SR), np.float32)
-            units.append({"id": u["id"], "seg": u["seg"], "role": u["role"], "group": u["group"],
-                          "repeat": u["repeat"], "start_s": round(pos / SR, 3), "end_s": round((pos + len(y)) / SR, 3),
-                          "start": pos, "end": pos + len(y)})
-            parts += [y, gap]; pos += len(y) + len(gap)
-        wavs.append((p["file"], np.concatenate(parts)))
-        entries.append({"num": p["num"], "marked": p["marked"], "mode": plan["mode"], "file": p["file"],
-                        "display_text": p["segments"], "duration_s": round(pos / SR, 3), "samples": pos,
-                        "units": units})
-    manifest = {"format": FORMAT, "work_id": plan["work_id"], "title": plan["title"], "mode": plan["mode"],
-                "sr": SR, "pasurams": entries}
     os.makedirs(outdir, exist_ok=True)
     mpath = os.path.join(outdir, f"{plan['work_id']}.{plan['mode']}.manifest.json")
-    staged = []
+    entries, staged = [], []   # staged: (partial, final); one pāsuram in memory at a time
     try:
-        for name, y in wavs:
-            tmp = os.path.join(outdir, name + ".partial"); staged.append(tmp)
-            sf.write(tmp, y, SR, format="WAV", subtype="PCM_16")
-        tmp = mpath + ".partial"; staged.append(tmp)
-        with open(tmp, "w", encoding="utf-8") as f:
+        for p in plan["pasurams"]:
+            parts, units, pos = [], [], 0
+            for u in p["units"]:
+                y, _ = sf.read(paths[u["id"]], dtype="float32")
+                gap = np.zeros(round(u["gap_after_s"] * SR), np.float32)
+                units.append({"id": u["id"], "seg": u["seg"], "role": u["role"], "group": u["group"],
+                              "repeat": u["repeat"], "start_s": round(pos / SR, 3),
+                              "end_s": round((pos + len(y)) / SR, 3), "start": pos, "end": pos + len(y)})
+                parts += [y, gap]; pos += len(y) + len(gap)
+            final = os.path.join(outdir, p["file"]); staged.append((final + ".partial", final))
+            sf.write(staged[-1][0], np.concatenate(parts), SR, format="WAV", subtype="PCM_16")
+            entries.append({"num": p["num"], "marked": p["marked"], "mode": plan["mode"], "file": p["file"],
+                            "display_text": p["segments"], "duration_s": round(pos / SR, 3), "samples": pos,
+                            "units": units})
+        manifest = {"format": FORMAT, "work_id": plan["work_id"], "title": plan["title"], "mode": plan["mode"],
+                    "sr": SR, "pasurams": entries}
+        staged.append((mpath + ".partial", mpath))
+        with open(staged[-1][0], "w", encoding="utf-8") as f:
             f.write(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n")
     except BaseException:
-        for t in staged:
-            if os.path.exists(t): os.remove(t)
+        for tmp, _ in staged:
+            if os.path.exists(tmp): os.remove(tmp)
         raise
-    for (name, _), tmp in zip(wavs, staged):
-        os.replace(tmp, os.path.join(outdir, name))
-    os.replace(staged[-1], mpath)
+    for tmp, final in staged:
+        os.replace(tmp, final)
     return manifest
 
 

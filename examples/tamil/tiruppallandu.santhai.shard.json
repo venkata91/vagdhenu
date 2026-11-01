@@ -3,7 +3,7 @@
   "id": "tiruppallandu_1.1.1_s01_acharya",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
   ],
   "seed": 4735,
   "no_sandhi": true,
@@ -21,7 +21,7 @@
   "id": "tiruppallandu_1.1.1_s01_shishya_r1",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
   ],
   "seed": 47637,
   "no_sandhi": true,
@@ -39,7 +39,7 @@
   "id": "tiruppallandu_1.1.1_s01_shishya_r2",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
   ],
   "seed": 71295,
   "no_sandhi": true,
@@ -216,10 +216,226 @@
   "pass": 1
  },
  {
+  "id": "tiruppallandu_1.1.1_s01_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+  ],
+  "seed": 68297,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s01_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.1",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s01_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+  ],
+  "seed": 98999,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s01_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.1",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s01_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
+  ],
+  "seed": 11697,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s01_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.1",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s02_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பலகோடி நூறாயிரம் ⋆"
+  ],
+  "seed": 60761,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s02_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.1",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s02_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பலகோடி நூறாயிரம் ⋆"
+  ],
+  "seed": 88286,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s02_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.1",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s02_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பலகோடி நூறாயிரம் ⋆"
+  ],
+  "seed": 81224,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s02_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.1",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s03_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "மல்லாண்ட திண்தோள் மணிவண்ணா ! ⋆"
+  ],
+  "seed": 82574,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s03_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.1",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s03_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "மல்லாண்ட திண்தோள் மணிவண்ணா ! ⋆"
+  ],
+  "seed": 37158,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s03_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.1",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s03_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "மல்லாண்ட திண்தோள் மணிவண்ணா ! ⋆"
+  ],
+  "seed": 29504,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s03_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.1",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s04_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன் சேவடி செவ்வி திருக்காப்பு ॥ 1.1.1 ॥"
+  ],
+  "seed": 95641,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s04_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.1",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s04_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன் சேவடி செவ்வி திருக்காப்பு ॥ 1.1.1 ॥"
+  ],
+  "seed": 28204,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s04_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.1",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.1_s04_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன் சேவடி செவ்வி திருக்காப்பு ॥ 1.1.1 ॥"
+  ],
+  "seed": 24762,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.1_s04_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.1",
+  "seg": 4,
+  "pass": 2
+ },
+ {
   "id": "tiruppallandu_1.1.2_s01_acharya",
   "meter": "santhai",
   "padas": [
-   "‡அடியோமோடும் நின்னோடும் ⋆"
+   "அடியோமோடும் நின்னோடும் ⋆"
   ],
   "seed": 42665,
   "no_sandhi": true,
@@ -237,7 +453,7 @@
   "id": "tiruppallandu_1.1.2_s01_shishya_r1",
   "meter": "santhai",
   "padas": [
-   "‡அடியோமோடும் நின்னோடும் ⋆"
+   "அடியோமோடும் நின்னோடும் ⋆"
   ],
   "seed": 17351,
   "no_sandhi": true,
@@ -255,7 +471,7 @@
   "id": "tiruppallandu_1.1.2_s01_shishya_r2",
   "meter": "santhai",
   "padas": [
-   "‡அடியோமோடும் நின்னோடும் ⋆"
+   "அடியோமோடும் நின்னோடும் ⋆"
   ],
   "seed": 19821,
   "no_sandhi": true,
@@ -646,6 +862,438 @@
   "pasuram": "1.1.2",
   "seg": 8,
   "pass": 1
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s01_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "அடியோமோடும் நின்னோடும் ⋆"
+  ],
+  "seed": 23643,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s01_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s01_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "அடியோமோடும் நின்னோடும் ⋆"
+  ],
+  "seed": 12942,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s01_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s01_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "அடியோமோடும் நின்னோடும் ⋆"
+  ],
+  "seed": 69528,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s01_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s02_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பிரிவின்றி ஆயிரம் பல்லாண்டு ⋆"
+  ],
+  "seed": 43819,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s02_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s02_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பிரிவின்றி ஆயிரம் பல்லாண்டு ⋆"
+  ],
+  "seed": 30983,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s02_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s02_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பிரிவின்றி ஆயிரம் பல்லாண்டு ⋆"
+  ],
+  "seed": 24225,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s02_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s03_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவாய் நின் வலமார்பினில் ⋆"
+  ],
+  "seed": 54812,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s03_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s03_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவாய் நின் வலமார்பினில் ⋆"
+  ],
+  "seed": 63359,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s03_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s03_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவாய் நின் வலமார்பினில் ⋆"
+  ],
+  "seed": 17609,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s03_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s04_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "வாழ்கின்ற மங்கையும் பல்லாண்டு ⋆"
+  ],
+  "seed": 15755,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s04_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s04_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "வாழ்கின்ற மங்கையும் பல்லாண்டு ⋆"
+  ],
+  "seed": 38485,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s04_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s04_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "வாழ்கின்ற மங்கையும் பல்லாண்டு ⋆"
+  ],
+  "seed": 85331,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s04_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s05_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவார் சோதி வலத்துறையும் ⋆"
+  ],
+  "seed": 39708,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s05_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s05_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவார் சோதி வலத்துறையும் ⋆"
+  ],
+  "seed": 62701,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s05_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s05_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "வடிவார் சோதி வலத்துறையும் ⋆"
+  ],
+  "seed": 49723,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s05_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s06_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "சுடராழியும் பல்லாண்டு ⋆"
+  ],
+  "seed": 7756,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s06_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s06_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "சுடராழியும் பல்லாண்டு ⋆"
+  ],
+  "seed": 91300,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s06_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s06_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "சுடராழியும் பல்லாண்டு ⋆"
+  ],
+  "seed": 39458,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s06_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s07_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "படைபோர் புக்கு முழங்கும் ⋆"
+  ],
+  "seed": 44347,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s07_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s07_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "படைபோர் புக்கு முழங்கும் ⋆"
+  ],
+  "seed": 50524,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s07_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s07_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "படைபோர் புக்கு முழங்கும் ⋆"
+  ],
+  "seed": 54890,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s07_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s08_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "அப்பாஞ்சசன்னியமும் பல்லாண்டே ॥ 1.1.2 ॥"
+  ],
+  "seed": 3818,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s08_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.2",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s08_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "அப்பாஞ்சசன்னியமும் பல்லாண்டே ॥ 1.1.2 ॥"
+  ],
+  "seed": 35001,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s08_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.2",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.2_s08_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "அப்பாஞ்சசன்னியமும் பல்லாண்டே ॥ 1.1.2 ॥"
+  ],
+  "seed": 53263,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.2_s08_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.2",
+  "seg": 8,
+  "pass": 2
  },
  {
   "id": "tiruppallandu_1.1.3_s01_acharya",
@@ -4053,7 +4701,7 @@
   "id": "tiruppallandu_1.1.11_s01_acharya",
   "meter": "santhai",
   "padas": [
-   "‡அல்வழக்கொன்றும் இல்லா ⋆"
+   "அல்வழக்கொன்றும் இல்லா ⋆"
   ],
   "seed": 73356,
   "no_sandhi": true,
@@ -4071,7 +4719,7 @@
   "id": "tiruppallandu_1.1.11_s01_shishya_r1",
   "meter": "santhai",
   "padas": [
-   "‡அல்வழக்கொன்றும் இல்லா ⋆"
+   "அல்வழக்கொன்றும் இல்லா ⋆"
   ],
   "seed": 64017,
   "no_sandhi": true,
@@ -4089,7 +4737,7 @@
   "id": "tiruppallandu_1.1.11_s01_shishya_r2",
   "meter": "santhai",
   "padas": [
-   "‡அல்வழக்கொன்றும் இல்லா ⋆"
+   "அல்வழக்கொன்றும் இல்லா ⋆"
   ],
   "seed": 88459,
   "no_sandhi": true,
@@ -4482,10 +5130,442 @@
   "pass": 1
  },
  {
+  "id": "tiruppallandu_1.1.11_s01_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "அல்வழக்கொன்றும் இல்லா ⋆"
+  ],
+  "seed": 13277,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s01_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s01_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "அல்வழக்கொன்றும் இல்லா ⋆"
+  ],
+  "seed": 18137,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s01_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s01_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "அல்வழக்கொன்றும் இல்லா ⋆"
+  ],
+  "seed": 38287,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s01_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s02_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "அணிகோட்டியர் கோன் ⋆"
+  ],
+  "seed": 98989,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s02_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s02_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "அணிகோட்டியர் கோன் ⋆"
+  ],
+  "seed": 5376,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s02_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s02_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "அணிகோட்டியர் கோன் ⋆"
+  ],
+  "seed": 89318,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s02_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s03_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "அபிமானதுங்கன் செல்வனைப் போலத் ⋆"
+  ],
+  "seed": 70266,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s03_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s03_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "அபிமானதுங்கன் செல்வனைப் போலத் ⋆"
+  ],
+  "seed": 36456,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s03_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s03_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "அபிமானதுங்கன் செல்வனைப் போலத் ⋆"
+  ],
+  "seed": 5022,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s03_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s04_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "திருமாலே ! நானும் உனக்குப் பழவடியேன் ⋆"
+  ],
+  "seed": 74189,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s04_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s04_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "திருமாலே ! நானும் உனக்குப் பழவடியேன் ⋆"
+  ],
+  "seed": 3922,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s04_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s04_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "திருமாலே ! நானும் உனக்குப் பழவடியேன் ⋆"
+  ],
+  "seed": 85908,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s04_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s05_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்வகையால் நமோ நாராயணாவென்று ⋆"
+  ],
+  "seed": 33498,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s05_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s05_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்வகையால் நமோ நாராயணாவென்று ⋆"
+  ],
+  "seed": 31130,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s05_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s05_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்வகையால் நமோ நாராயணாவென்று ⋆"
+  ],
+  "seed": 15276,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s05_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s06_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "நாமம் பல பரவி ⋆"
+  ],
+  "seed": 67018,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s06_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s06_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "நாமம் பல பரவி ⋆"
+  ],
+  "seed": 82307,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s06_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s06_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "நாமம் பல பரவி ⋆"
+  ],
+  "seed": 16901,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s06_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s07_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்வகையாலும் பவித்திரனே ! ⋆"
+  ],
+  "seed": 55645,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s07_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s07_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்வகையாலும் பவித்திரனே ! ⋆"
+  ],
+  "seed": 12043,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s07_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s07_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்வகையாலும் பவித்திரனே ! ⋆"
+  ],
+  "seed": 24925,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s07_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s08_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன்னைப் பல்லாண்டு கூறுவனே ॥ 1.1.11 ॥"
+  ],
+  "seed": 32908,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s08_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.11",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s08_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன்னைப் பல்லாண்டு கூறுவனே ॥ 1.1.11 ॥"
+  ],
+  "seed": 28750,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s08_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.11",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.11_s08_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "உன்னைப் பல்லாண்டு கூறுவனே ॥ 1.1.11 ॥"
+  ],
+  "seed": 25528,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.11_s08_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.11",
+  "seg": 8,
+  "pass": 2
+ },
+ {
   "id": "tiruppallandu_1.1.12_s01_acharya",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டென்று பவித்திரனைப் ⋆"
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
   ],
   "seed": 86170,
   "no_sandhi": true,
@@ -4503,7 +5583,7 @@
   "id": "tiruppallandu_1.1.12_s01_shishya_r1",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டென்று பவித்திரனைப் ⋆"
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
   ],
   "seed": 82083,
   "no_sandhi": true,
@@ -4521,7 +5601,7 @@
   "id": "tiruppallandu_1.1.12_s01_shishya_r2",
   "meter": "santhai",
   "padas": [
-   "‡பல்லாண்டென்று பவித்திரனைப் ⋆"
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
   ],
   "seed": 60217,
   "no_sandhi": true,
@@ -4912,5 +5992,437 @@
   "pasuram": "1.1.12",
   "seg": 8,
   "pass": 1
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s01_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
+  ],
+  "seed": 719,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s01_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s01_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
+  ],
+  "seed": 84848,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s01_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s01_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டென்று பவித்திரனைப் ⋆"
+  ],
+  "seed": 57270,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s01_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 1,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s02_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பரமேட்டியை ⋆"
+  ],
+  "seed": 21279,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s02_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s02_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பரமேட்டியை ⋆"
+  ],
+  "seed": 94793,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s02_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s02_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பரமேட்டியை ⋆"
+  ],
+  "seed": 71679,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s02_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 2,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s03_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "சார்ங்கம் என்னும் வில்லாண்டான் தன்னை ⋆"
+  ],
+  "seed": 86888,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s03_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s03_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "சார்ங்கம் என்னும் வில்லாண்டான் தன்னை ⋆"
+  ],
+  "seed": 15937,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s03_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s03_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "சார்ங்கம் என்னும் வில்லாண்டான் தன்னை ⋆"
+  ],
+  "seed": 53767,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s03_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 3,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s04_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "வில்லிபுத்தூர் விட்டுசித்தன் விரும்பிய சொல் ⋆"
+  ],
+  "seed": 71455,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s04_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s04_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "வில்லிபுத்தூர் விட்டுசித்தன் விரும்பிய சொல் ⋆"
+  ],
+  "seed": 78395,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s04_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s04_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "வில்லிபுத்தூர் விட்டுசித்தன் விரும்பிய சொல் ⋆"
+  ],
+  "seed": 13933,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s04_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 4,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s05_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்லாண்டென்று நவின்றுரைப்பார் ⋆"
+  ],
+  "seed": 90856,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s05_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s05_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்லாண்டென்று நவின்றுரைப்பார் ⋆"
+  ],
+  "seed": 39187,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s05_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s05_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "நல்லாண்டென்று நவின்றுரைப்பார் ⋆"
+  ],
+  "seed": 4725,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s05_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 5,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s06_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "நமோ நாராயணாயவென்று ⋆"
+  ],
+  "seed": 52152,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s06_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s06_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "நமோ நாராயணாயவென்று ⋆"
+  ],
+  "seed": 78602,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s06_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s06_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "நமோ நாராயணாயவென்று ⋆"
+  ],
+  "seed": 49756,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s06_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 6,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s07_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டும் பரமாத்மனைச் ⋆"
+  ],
+  "seed": 25871,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s07_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s07_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டும் பரமாத்மனைச் ⋆"
+  ],
+  "seed": 46850,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s07_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s07_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "பல்லாண்டும் பரமாத்மனைச் ⋆"
+  ],
+  "seed": 60964,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s07_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 7,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s08_acharya_p2",
+  "meter": "santhai",
+  "padas": [
+   "சூழ்ந்திருந்தேத்துவர் பல்லாண்டே ॥ 1.1.12 ॥"
+  ],
+  "seed": 28958,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s08_acharya_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "acharya",
+  "group": null,
+  "repeat": 0,
+  "pasuram": "1.1.12",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s08_shishya_r1_p2",
+  "meter": "santhai",
+  "padas": [
+   "சூழ்ந்திருந்தேத்துவர் பல்லாண்டே ॥ 1.1.12 ॥"
+  ],
+  "seed": 98807,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s08_shishya_r1_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 1,
+  "pasuram": "1.1.12",
+  "seg": 8,
+  "pass": 2
+ },
+ {
+  "id": "tiruppallandu_1.1.12_s08_shishya_r2_p2",
+  "meter": "santhai",
+  "padas": [
+   "சூழ்ந்திருந்தேத்துவர் பல்லாண்டே ॥ 1.1.12 ॥"
+  ],
+  "seed": 26321,
+  "no_sandhi": true,
+  "out": "out/tamil_units/tiruppallandu_1.1.12_s08_shishya_r2_p2.wav",
+  "lang": "ta",
+  "mode": "santhai",
+  "role": "shishya",
+  "group": null,
+  "repeat": 2,
+  "pasuram": "1.1.12",
+  "seg": 8,
+  "pass": 2
  }
 ]

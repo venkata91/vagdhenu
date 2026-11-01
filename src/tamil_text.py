@@ -2,14 +2,17 @@
 
 Fixture format (UTF-8, NFC): '#' comments, '@key: value' header before the first section, then sections
 '[invocation]' / '[taniyan N]' / '[pasuram N]' / '[adivaravu]' / '[colophon]'. In pasuram/taniyan sections
-each non-blank line is one recitation segment (the edition's ⋆-segment); '‡' may only open the first
-segment; a trailing '॥ N ॥' must equal the section number. See README "Tamil (experimental)"."""
+each non-blank line is one recitation segment (the edition's ⋆-segment); the repeat mark (header
+'@repeat_mark:', default '‡' = recited twice) may only open the first segment and is removed from the
+stored line (Section.marked keeps it); a trailing '॥ N ॥' must equal the section number.
+See README "Tamil (experimental)"."""
 import os, re, unicodedata
 from dataclasses import dataclass, field
 
 KINDS = ("invocation", "taniyan", "pasuram", "adivaravu", "colophon")
 NUMBERED = ("taniyan", "pasuram")
 REQUIRED_META = ("title", "work_id", "source")
+DEFAULT_REPEAT_MARK = "‡"
 _NUM = re.compile(r"^\d+(\.\d+)*$")
 _HEADER = re.compile(r"^\[(\w+)(?:\s+(\S+))?\]$")
 _META = re.compile(r"^@(\w+):\s*(.*)$")
@@ -82,6 +85,9 @@ def parse_text(text, path="<text>"):
                         raise err(ln, f"missing required header '{k}'")
                 if not re.fullmatch(r"[a-z0-9_]+", meta["work_id"]):
                     raise err(ln, f"work_id '{meta['work_id']}' must match [a-z0-9_]+")
+                if "repeat_mark" in meta and not meta["repeat_mark"]:
+                    raise err(ln, "'@repeat_mark:' must not be empty")
+                mark = meta.get("repeat_mark", DEFAULT_REPEAT_MARK)
             close(cur)
             if kind in NUMBERED:
                 if num is None:
@@ -104,10 +110,14 @@ def parse_text(text, path="<text>"):
         if cur is None:
             raise err(ln, "text before the first section")
         if cur.kind in NUMBERED:
-            if "‡" in line[1:] or (line.startswith("‡") and cur.lines):
-                raise err(ln, "'‡' is only allowed as the first character of a section's first segment")
-            if line.startswith("‡"):
+            opens = line.startswith(mark)
+            if mark in line[len(mark) if opens else 0:] or (opens and cur.lines):
+                raise err(ln, f"repeat mark '{mark}' is only allowed to open a section's first segment")
+            if opens:
                 cur.marked = True
+                line = line[len(mark):].strip()
+                if not line:
+                    raise err(ln, f"empty segment after repeat mark '{mark}'")
             m = _END_NUM.search(line)
             if m and m.group(1) != cur.num:
                 raise err(ln, f"trailing '॥ {m.group(1)} ॥' does not match [{cur.kind} {cur.num}]")

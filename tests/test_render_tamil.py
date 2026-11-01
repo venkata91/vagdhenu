@@ -125,7 +125,7 @@ def test_readme_sequence_runs_into_fresh_dir(tmp_path):
     assert r.returncode == 0, r.stderr
     mod, st = load_render(tmp_path / "r", ["--outdir", "", "--bank_ta", tmp_bank_ta(tmp_path)])
     shard = json.load(open(fresh / "s.json", encoding="utf-8"))
-    assert len(shard) == 91
+    assert len(shard) == 91 + 28   # ‡ pāsurams 1, 2, 11, 12 recited twice
     for c in shard:   # the harness patches bvgan after import, so drive render_clip per clip
         mod.render_clip(c)
     r = subprocess.run([sys.executable, os.path.join(repo, "src", "tamil_assemble.py"), "--plan", str(fresh / "p.json"),

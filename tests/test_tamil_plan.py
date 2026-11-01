@@ -11,6 +11,7 @@ SEGS = [(p.num, i, l) for p in WORK.recited() for i, l in enumerate(p.lines, 1)]
 
 def build(mode, **cfg):
     config = TP.load_config(None)
+    config["repeat_marked"] = False     # structural tests count one pass; repeat passes tested separately
     for k, v in cfg.items():
         config[k] = {**config[k], **v} if isinstance(v, dict) else v
     return TP.build_plan(WORK, mode, config, "out/u")
@@ -113,6 +114,20 @@ def test_shard_entries_are_render_compatible_and_additive():
                           "repeat", "pasuram", "seg", "pass"}
 
 
+def test_marked_pasurams_are_recited_twice_by_default():
+    plan, _ = TP.build_plan(WORK, "single", TP.load_config(None), "out/u")
+    assert len(units(plan)) == 91 + 4 + 8 + 8 + 8
+
+
+def test_custom_repeat_mark_is_stripped_and_doubles_the_pasuram():
+    w = TT.parse_text("@title: t\n@work_id: w\n@source: s\n@repeat_mark: (2)\n"
+                      "[pasuram 1]\n(2) அ ⋆\nஆ ॥ 1 ॥\n[pasuram 2]\nஇ ॥ 2 ॥\n", "x.txt")
+    assert [p.marked for p in w.recited()] == [True, False]
+    assert w.recited()[0].lines[0] == "அ ⋆"
+    plan, shard = TP.build_plan(w, "single", TP.load_config(None), "out/u")
+    assert [s["padas"][0] for s in shard] == ["அ ⋆", "ஆ ॥ 1 ॥", "அ ⋆", "ஆ ॥ 1 ॥", "இ ॥ 2 ॥"]
+
+
 def test_repeat_marked_adds_second_pass_for_marked_pasurams_only():
     plan, _ = build("single", repeat_marked=True)
     p2 = {u["id"].split("_")[1] for u in units(plan) if u["id"].endswith("_p2")}
@@ -160,7 +175,7 @@ def test_committed_example_matches_fresh_cli_output(tmp_path):
     assert r.returncode == 0, r.stderr
     for got, ref in (("s.json", "tiruppallandu.santhai.shard.json"), ("p.json", "tiruppallandu.santhai.plan.json")):
         assert (tmp_path / got).read_bytes() == open(os.path.join(REPO, "examples", "tamil", ref), "rb").read()
-    assert len(json.loads((tmp_path / "s.json").read_text())) == 273
+    assert len(json.loads((tmp_path / "s.json").read_text())) == 3 * (91 + 28)
 
 
 def test_cli_creates_unit_dir(tmp_path):

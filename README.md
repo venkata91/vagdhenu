@@ -57,14 +57,14 @@ Be clear about where this stands. No Tamil reference audio ships with the repo, 
 **Fixture format.** UTF-8 text in the source edition's spelling (Grantha letters with sub/superscript marks are allowed in display text).
 - `#` starts a comment line. `@key: value` header lines (`title`, `work_id`, `source`, …) come before the first section.
 - Sections: `[invocation]`, `[taniyan N]`, `[pasuram N]`, `[adivaravu]`, `[colophon]`. Only pāsurams are rendered by default; the `sections` config key can add taniyans.
-- Inside a pāsuram, each line is one recitation segment, the `⋆`-segment of the edition. `‡` (the edition's mark for pāsurams recited twice) may open the first line, and a trailing `॥ N ॥` must match the section number.
-- The marks stay in the display text and the manifest. The model only sees Tamil letters: markup and digits are stripped, `ஶ` becomes `ஸ`, and anything outside the model's Tamil vocabulary is an error naming the segment.
+- Inside a pāsuram, each line is one recitation segment, the `⋆`-segment of the edition. The repeat mark for pāsurams recited twice may open the first line. It is `‡` by default; set the header `@repeat_mark: <symbol>` for editions that use another symbol. The mark is stripped from the text. A trailing `॥ N ॥` must match the section number.
+- `⋆` and `॥ N ॥` stay in the display text; the repeat mark is recorded as `marked` in the plan and manifest. The model only sees Tamil letters: markup and digits are stripped, `ஶ` becomes `ஸ`, and anything outside the model's Tamil vocabulary is an error naming the segment.
 
 **Modes** (`--mode`):
 - `single`: one voice, one unit per segment.
 - `santhai`: the ācārya says a segment once, then the śiṣyas repeat it `santhai_repeats` times (default 2).
 - `goshti`: everyone together in one voice. With `alternate: true` units are labelled group A or B, switching per segment or per pāsuram (`alternate_unit`), and each group can use its own reference via `refs`.
-- `repeat_marked: true` recites the `‡` pāsurams a second time.
+- `repeat_marked` (default `true`) recites the marked pāsurams a second time; set it to `false` to recite each pāsuram once.
 
 Gaps between units come from a `--config` JSON and default to: segment 0.55 s, end of pāsuram 0.95 s, ācārya→śiṣya 0.8 s, śiṣya→śiṣya 0.6 s, group switch 0.4 s. `python src/tamil_plan.py --help` lists every config key.
 

@@ -24,7 +24,7 @@ DEFAULT_CONFIG = {
     "refs": {"reciter": "santhai", "acharya": "santhai", "shishya": "santhai",
              "goshti": "goshti", "A": "goshti", "B": "goshti"},
     "base_seed": 60,
-    "repeat_marked": False,
+    "repeat_marked": True,
     "sections": ["pasuram"],
 }
 

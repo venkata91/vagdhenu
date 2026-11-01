@@ -35,7 +35,7 @@ def test_twelve_pasurams_with_marks_and_segment_counts(work):
     for p in ps:
         assert p.lines[-1].endswith(f"॥ {p.num} ॥")
         assert all(l.endswith("⋆") for l in p.lines[:-1])
-        assert sum("‡" in l for l in p.lines) == (1 if p.marked else 0)
+        assert not any("‡" in l for l in p.lines)
 
 
 def test_non_recited_sections_are_labelled_and_excluded(work):

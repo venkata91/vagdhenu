@@ -88,6 +88,8 @@ python src/render.py --shard out/tp.shard.json --results out/tp.results.json
 python src/tamil_assemble.py --plan out/tp.plan.json --units_dir out/tamil_units --outdir out/tamil
 ```
 
+**Which voice checkpoint.** The default `--voice` (`voice_steer_ema_…pt`) was fine-tuned only on one reciter's Sanskrit, written in Kannada script. It has never seen Tamil and tends to keep his voice. `voice_armA_ema_…pt` follows the reference more closely. You can also pass the base `ai4bharat/IndicF5` `model.safetensors`, which was trained on Tamil read speech among other languages: it clones the reference voice but chants flatly. Getting it requires accepting AI4Bharat's terms on Hugging Face (`huggingface-cli download ai4bharat/IndicF5 model.safetensors --local-dir models/indicf5`). Which checkpoint suits Tamil chant is still untested.
+
 **Tests.** The suite is CPU only. torch, F5 and BigVGAN are stubbed and never imported, and a golden snapshot pins the Sanskrit outputs.
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -q -r requirements-dev.txt

@@ -170,7 +170,8 @@ ap.add_argument("--dump_raw", default="", help="debug: also write un-gated conca
 ap.add_argument("--bank", default=os.path.join(HERE, "reference_bank", "bank.json"))
 ap.add_argument("--bank_ta", default=os.path.join(HERE, "reference_bank", "bank_ta.json"),
                 help="Tamil reference bank, read only for clips with lang 'ta'")
-ap.add_argument("--voice", default=f"{CHAMP}/voice_steer_ema_2026-06-17.pt")
+ap.add_argument("--voice", default=f"{CHAMP}/voice_steer_ema_2026-06-17.pt",
+                help="voice .pt, or the base ai4bharat/IndicF5 model.safetensors (zero-shot, flat prosody)")
 ap.add_argument("--voc", default=f"{CHAMP}/voc_bigvgan_EMA_2026-06-11.pth")
 ap.add_argument("--speed", type=float, default=0.90); ap.add_argument("--nfe", type=int, default=64)
 ap.add_argument("--cfg", type=float, default=3.0); ap.add_argument("--gap", type=float, default=0.55)
@@ -188,8 +189,13 @@ vocab = next((v for v in _vocab_cands if v and os.path.exists(v)), None)
 if vocab is None:
     raise SystemExit("vocab.txt not found — run scripts/download_weights.py")
 cfm = load_model(DiT, CFG, mel_spec_type="vocos", vocab_file=vocab, device=DEVICE)
-ck = torch.load(a.voice, map_location="cpu", weights_only=True)
-ema = {k.replace("ema_model.", ""): v for k, v in ck["ema_model_state_dict"].items() if k not in ("initted", "step")}
+if a.voice.endswith(".safetensors"):   # base ai4bharat/IndicF5 (zero-shot voice, no chant fine-tune)
+    import base_ckpt
+    from safetensors.torch import load_file
+    ema = base_ckpt.remap(load_file(a.voice), cfm.state_dict().keys(), [n for n, _ in cfm.named_parameters()])
+else:
+    ck = torch.load(a.voice, map_location="cpu", weights_only=True)
+    ema = {k.replace("ema_model.", ""): v for k, v in ck["ema_model_state_dict"].items() if k not in ("initted", "step")}
 cfm.load_state_dict(ema, strict=False); cfm.eval()
 real_voc = load_vocoder("vocos", device=DEVICE)
 class Cap:

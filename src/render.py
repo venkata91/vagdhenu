@@ -2,12 +2,16 @@
 Faithful port of render_production.py's gold per-piece pipeline (helpers copied verbatim); the only
 change is structural: model loaded once, render_clip() called per clip with a per-clip seed.
 Writes DRY hemistich wavs (tanpura/assembly happen later in postaudio).
-shard JSON: [{"id","meter","padas":[deva,...],"seed":60,"no_sandhi":true,"out":"/abs/clip.wav"}]"""
-import os, sys, glob, json, argparse, numpy as np, soundfile as sf, torch
+shard JSON: [{"id","meter","padas":[deva,...],"seed":60,"no_sandhi":true,"out":"/abs/clip.wav"}]
+Tamil (experimental): clips with "lang":"ta" (from tamil_plan.py) go to render_clip_ta with refs from --bank_ta."""
+import os, sys, glob, json, argparse
 HERE = os.path.dirname(os.path.abspath(__file__))     # src/  (prep_text.py sits beside this file)
 REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
+import device as DEV   # before torch: enables the MPS CPU fallback
+import numpy as np, soundfile as sf, torch
 import prep_text as PT, bigvgan
+import tamil_text as TT, tamil_syll as TS, tamil_bank as TB
 from f5_tts.infer.utils_infer import load_model, load_vocoder, infer_process, preprocess_ref_audio_text
 from f5_tts.model import DiT
 CHAMP = os.environ.get("CHAMP_ROOT", os.path.join(REPO, "models"))   # weights land here (scripts/download_weights.py)
@@ -164,12 +168,18 @@ ap.add_argument("--results", required=True)
 ap.add_argument("--outdir", default="", help="if set, write <outdir>/<id>.wav (overrides per-clip out)")
 ap.add_argument("--dump_raw", default="", help="debug: also write un-gated concat to <dump_raw>/<id>_raw.wav")
 ap.add_argument("--bank", default=os.path.join(HERE, "reference_bank", "bank.json"))
-ap.add_argument("--voice", default=f"{CHAMP}/voice_steer_ema_2026-06-17.pt")
+ap.add_argument("--bank_ta", default=os.path.join(HERE, "reference_bank", "bank_ta.json"),
+                help="Tamil reference bank, read only for clips with lang 'ta'")
+ap.add_argument("--voice", default=f"{CHAMP}/voice_steer_ema_2026-06-17.pt",
+                help="voice .pt, or the base ai4bharat/IndicF5 model.safetensors (zero-shot, flat prosody)")
 ap.add_argument("--voc", default=f"{CHAMP}/voc_bigvgan_EMA_2026-06-11.pth")
 ap.add_argument("--speed", type=float, default=0.90); ap.add_argument("--nfe", type=int, default=64)
 ap.add_argument("--cfg", type=float, default=3.0); ap.add_argument("--gap", type=float, default=0.55)
 ap.add_argument("--gap_halant", type=float, default=0.20)
+ap.add_argument("--device", default="auto", choices=DEV.CHOICES, help="auto = cuda, else mps (Apple silicon), else cpu")
 a = ap.parse_args()
+DEVICE = DEV.pick_device(a.device, torch)
+print(f"[render] device={DEVICE}", flush=True)
 
 CFG = dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=512, conv_layers=4)
 # vocab.txt ships in the weights repo (-> models/ via download_weights.py); fall back to the IndicF5 cache for legacy local setups
@@ -178,21 +188,26 @@ _vocab_cands = [os.path.join(CHAMP, "vocab.txt"), os.path.join(HERE, "reference_
 vocab = next((v for v in _vocab_cands if v and os.path.exists(v)), None)
 if vocab is None:
     raise SystemExit("vocab.txt not found — run scripts/download_weights.py")
-cfm = load_model(DiT, CFG, mel_spec_type="vocos", vocab_file=vocab, device="cuda")
-ck = torch.load(a.voice, map_location="cpu", weights_only=True)
-ema = {k.replace("ema_model.", ""): v for k, v in ck["ema_model_state_dict"].items() if k not in ("initted", "step")}
+cfm = load_model(DiT, CFG, mel_spec_type="vocos", vocab_file=vocab, device=DEVICE)
+if a.voice.endswith(".safetensors"):   # base ai4bharat/IndicF5 (zero-shot voice, no chant fine-tune)
+    import base_ckpt
+    from safetensors.torch import load_file
+    ema = base_ckpt.remap(load_file(a.voice), cfm.state_dict().keys(), [n for n, _ in cfm.named_parameters()])
+else:
+    ck = torch.load(a.voice, map_location="cpu", weights_only=True)
+    ema = {k.replace("ema_model.", ""): v for k, v in ck["ema_model_state_dict"].items() if k not in ("initted", "step")}
 cfm.load_state_dict(ema, strict=False); cfm.eval()
-real_voc = load_vocoder("vocos")
+real_voc = load_vocoder("vocos", device=DEVICE)
 class Cap:
     def __init__(s, r): s.r = r; s.last = None
     def decode(s, m): s.last = m.detach().cpu().numpy(); return s.r.decode(m)
 cap = Cap(real_voc)
 g = bigvgan.BigVGAN.from_pretrained("nvidia/bigvgan_v2_24khz_100band_256x", use_cuda_kernel=False)
 bsd = torch.load(a.voc, map_location="cpu"); bsd = bsd.get("model", bsd)
-g.load_state_dict(bsd); g.remove_weight_norm(); g = g.cuda().eval()
+g.load_state_dict(bsd); g.remove_weight_norm(); g = g.to(DEVICE).eval()
 for p in g.parameters(): p.requires_grad = False
 def bvgan(mel):
-    m = torch.from_numpy(mel).cuda()
+    m = torch.from_numpy(mel).to(DEVICE)
     with torch.no_grad():
         if m.dim()==3 and m.shape[1]!=100 and m.shape[2]==100: m = m.transpose(1,2)
         return g(m).squeeze().cpu().numpy().astype(np.float32)
@@ -232,7 +247,42 @@ def _stitch(segs, GAPS, fric=False, halant=False):
     for i, s in enumerate(segs): b += [gate(s, fric=(fric and i == 0), halant=(halant and i == last)), GAPS[i] if i < len(GAPS) else GAPS[-1]]
     return np.concatenate(b[:-1])
 
+_ta_bank = None
+def render_clip_ta(clip):
+    """Tamil clip: native-script model text, Tamil syllable/mātrai count, no Sanskrit post-processing or fricative gate."""
+    global _ta_bank
+    if _ta_bank is None: _ta_bank = TB.load_bank(a.bank_ta)
+    seed = int(clip["seed"])
+    out = os.path.join(a.outdir, clip["id"] + ".wav") if a.outdir else clip["out"]
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)   # before inference, so a missing dir can't waste GPU work
+    ref = TB.resolve_ref(_ta_bank, os.path.dirname(a.bank_ta), clip)
+    spd = float(clip.get("speed", a.speed))
+    ref_audio, ref_t = preprocess_ref_audio_text(ref.wav, ref.model_ref_text, clip_short=True)
+    _rab, _srb = _ta.load(ref_audio); ref_len = _rab.shape[-1] / _srb
+    PIECES = [TT.model_text(p, where=clip["id"]) for p in clip["padas"]]
+    hold = float(clip.get("phrase_end_matrai", 0)) if ref.unit == "matrai" else 0.0   # held last syllable of a ⋆-phrase
+    NSYLL = [TS.count_units(x, ref.unit) + hold for x in PIECES]
+    GAPS = [np.zeros(int(a.gap*SR), dtype=np.float32) for _ in PIECES]
+    bseg = []
+    for i, p in enumerate(PIECES):
+        _fixd = (ref_len + NSYLL[i]*ref.sps) if ref.sps > 0 else None
+        for att in range(4):
+            torch.manual_seed(seed + att)
+            w, sr, _ = infer_process(ref_audio, ref_t, p, cfm, cap, mel_spec_type="vocos", speed=spd, nfe_step=a.nfe, cfg_strength=a.cfg, device=DEVICE, fix_duration=_fixd)
+            w = np.array(w, dtype=np.float32)
+            if np.abs(w).max() > 1.5: w = w/32768.0
+            if float(np.sqrt((w**2).mean())) > 0.04: break   # retry near-silent takes
+        y = bvgan(cap.last); mx = np.abs(y).max(); y = y/mx*0.97 if mx > 1 else y
+        bseg.append(y)
+    if a.dump_raw:
+        os.makedirs(a.dump_raw, exist_ok=True)
+        sf.write(os.path.join(a.dump_raw, clip["id"] + "_raw.wav"), np.concatenate(bseg), SR)
+    final = _stitch(bseg, GAPS)
+    sf.write(out, final, SR)
+    return {"id": clip["id"], "dur": round(len(final)/SR, 3), "pieces": len(PIECES), "seed": seed, "out": out, "lang": "ta"}
+
 def render_clip(clip):
+    if clip.get("lang") == "ta": return render_clip_ta(clip)
     meter = clip["meter"]; seed = int(clip["seed"]); no_sandhi = bool(clip["no_sandhi"])
     out = os.path.join(a.outdir, clip["id"] + ".wav") if a.outdir else clip["out"]
     ref_audio, ref_t, sps, ref_len = get_ref(meter)
@@ -278,7 +328,7 @@ def render_clip(clip):
         for att in range(4):
             torch.manual_seed(seed + att)
             _fixd = (ref_len + NSYLL[i]*sps) if (sps > 0 and NSYLL) else None
-            w, sr, _ = infer_process(_ra, _rt, p, cfm, cap, mel_spec_type="vocos", speed=spd, nfe_step=a.nfe, cfg_strength=a.cfg, device="cuda", fix_duration=_fixd)
+            w, sr, _ = infer_process(_ra, _rt, p, cfm, cap, mel_spec_type="vocos", speed=spd, nfe_step=a.nfe, cfg_strength=a.cfg, device=DEVICE, fix_duration=_fixd)
             w = np.array(w, dtype=np.float32)
             if np.abs(w).max() > 1.5: w = w/32768.0
             if float(np.sqrt((w**2).mean())) > 0.04: au = w; break

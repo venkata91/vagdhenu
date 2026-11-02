@@ -243,7 +243,7 @@ def _stitch(segs, GAPS, fric=False, halant=False):
 
 _ta_bank = None
 def render_clip_ta(clip):
-    """Tamil clip: native-script model text, Tamil syllable count, no Sanskrit post-processing or fricative gate."""
+    """Tamil clip: native-script model text, Tamil syllable/mātrai count, no Sanskrit post-processing or fricative gate."""
     global _ta_bank
     if _ta_bank is None: _ta_bank = TB.load_bank(a.bank_ta)
     seed = int(clip["seed"])
@@ -254,7 +254,8 @@ def render_clip_ta(clip):
     ref_audio, ref_t = preprocess_ref_audio_text(ref.wav, ref.model_ref_text, clip_short=True)
     _rab, _srb = _ta.load(ref_audio); ref_len = _rab.shape[-1] / _srb
     PIECES = [TT.model_text(p, where=clip["id"]) for p in clip["padas"]]
-    NSYLL = [TS.n_syllables(x) for x in PIECES]
+    hold = float(clip.get("phrase_end_matrai", 0)) if ref.unit == "matrai" else 0.0   # held last syllable of a ⋆-phrase
+    NSYLL = [TS.count_units(x, ref.unit) + hold for x in PIECES]
     GAPS = [np.zeros(int(a.gap*SR), dtype=np.float32) for _ in PIECES]
     bseg = []
     for i, p in enumerate(PIECES):

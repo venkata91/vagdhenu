@@ -68,10 +68,13 @@ Be clear about where this stands. No Tamil reference audio ships with the repo, 
 
 Gaps between units come from a `--config` JSON and default to: segment 0.55 s, end of pāsuram 0.95 s, ācārya→śiṣya 0.8 s, śiṣya→śiṣya 0.6 s, group switch 0.4 s. `python src/tamil_plan.py --help` lists every config key.
 
-**Adding the two reference clips** (no code change). Record a santhai clip and a goṣṭhi clip of your own voice, each 15 s or shorter (the half-reference rule). Drop them into `src/reference_bank/` as `ta_santhai.wav` and `ta_goshti.wav`, then fill `ref_text` (exactly the Tamil words you hear in the clip) and `sec_per_syll` in `src/reference_bank/bank_ta.json`. The `_template` entry in that file shows every field. To measure `sec_per_syll`:
+**Duration unit** (config `duration_unit`). Each unit's length is reference length + count × pace, as for Sanskrit. `syllable` (default) gives every syllable the same time. `matrai` counts traditional mātrai instead: kuṟil 1, neṭil 2, oṟṟu and āytam ½, so பல்லாண்டு is 5 mātrai rather than 3 syllables. In `matrai` mode, `phrase_end_matrai` (default 0) adds extra mātrai for the held last syllable of each ⋆-phrase. Each unit reads its pace from the matching bank field (`sec_per_syll` or `sec_per_matrai`). Which one sounds closer to a real recitation hasn't been checked by ear yet.
+
+**Adding the two reference clips** (no code change). Record a santhai clip and a goṣṭhi clip of your own voice, each 15 s or shorter (the half-reference rule). Drop them into `src/reference_bank/` as `ta_santhai.wav` and `ta_goshti.wav`, then fill `ref_text` (exactly the Tamil words you hear in the clip), `sec_per_syll` and `sec_per_matrai` in `src/reference_bank/bank_ta.json`. The `_template` entry in that file shows every field. To measure both:
 ```bash
 python src/tamil_bank.py sps --wav src/reference_bank/ta_santhai.wav --ref_text 'பல்லாண்டு பல்லாண்டு …'
-# {"dur_s": …, "nsyll": …, "sps": …, "warning": null}   (duration / Tamil syllables x 1.10; warns over 15 s)
+# {"dur_s": …, "nsyll": …, "sps": …, "nmatrai": …, "spm": …, "warning": null}
+#   sps -> sec_per_syll, spm -> sec_per_matrai (duration / count x 1.10; warns over 15 s)
 ```
 
 **Running it.** Planning and assembly run on CPU; `render.py` uses a GPU when one is available (`--device mps` on a Mac).

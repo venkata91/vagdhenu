@@ -52,3 +52,20 @@ def test_every_segment_counts_the_same_on_display_and_model_text(seg):
 ])
 def test_asai_hand_annotated(word, asai):
     assert TS.asai(word) == asai
+
+
+@pytest.mark.parametrize("s, m", [
+    ("பல்லாண்டு", 5.0),           # ப 1 + ல் ½ + லா 2 + ண் ½ + டு 1
+    ("அரி", 2.0),                 # two kuṟil
+    ("ஆயிரம்", 4.5),              # ஆ 2 + யி 1 + ர 1 + ம் ½
+    ("எஃகு", 2.5),                # எ 1 + ஃ ½ + கு 1
+    ("மணிவண்ணா ! ⋆", 5.5),        # ம 1 + ணி 1 + வ 1 + ண் ½ + ணா 2; markup ignored
+])
+def test_matrai_count(s, m):
+    assert TS.n_matrai(s) == m
+    assert TS.count_units(s, "matrai") == m and TS.count_units(s, "syllable") == TS.n_syllables(s)
+
+
+def test_count_units_rejects_unknown_unit():
+    with pytest.raises(ValueError):
+        TS.count_units("அரி", "mora")

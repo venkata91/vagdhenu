@@ -15,7 +15,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s01_shishya_r1",
@@ -33,7 +35,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s01_shishya_r2",
@@ -51,7 +55,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_acharya",
@@ -69,7 +75,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_shishya_r1",
@@ -87,7 +95,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_shishya_r2",
@@ -105,7 +115,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_acharya",
@@ -123,7 +135,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_shishya_r1",
@@ -141,7 +155,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_shishya_r2",
@@ -159,7 +175,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_acharya",
@@ -177,7 +195,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_shishya_r1",
@@ -195,7 +215,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_shishya_r2",
@@ -213,7 +235,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s01_acharya_p2",
@@ -231,7 +255,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s01_shishya_r1_p2",
@@ -249,7 +275,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s01_shishya_r2_p2",
@@ -267,7 +295,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_acharya_p2",
@@ -285,7 +315,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_shishya_r1_p2",
@@ -303,7 +335,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s02_shishya_r2_p2",
@@ -321,7 +355,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_acharya_p2",
@@ -339,7 +375,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_shishya_r1_p2",
@@ -357,7 +395,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s03_shishya_r2_p2",
@@ -375,7 +415,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_acharya_p2",
@@ -393,7 +435,9 @@
   "repeat": 0,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_shishya_r1_p2",
@@ -411,7 +455,9 @@
   "repeat": 1,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.1_s04_shishya_r2_p2",
@@ -429,7 +475,9 @@
   "repeat": 2,
   "pasuram": "1.1.1",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_acharya",
@@ -447,7 +495,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_shishya_r1",
@@ -465,7 +515,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_shishya_r2",
@@ -483,7 +535,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_acharya",
@@ -501,7 +555,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_shishya_r1",
@@ -519,7 +575,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_shishya_r2",
@@ -537,7 +595,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_acharya",
@@ -555,7 +615,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_shishya_r1",
@@ -573,7 +635,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_shishya_r2",
@@ -591,7 +655,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_acharya",
@@ -609,7 +675,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_shishya_r1",
@@ -627,7 +695,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_shishya_r2",
@@ -645,7 +715,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_acharya",
@@ -663,7 +735,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_shishya_r1",
@@ -681,7 +755,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_shishya_r2",
@@ -699,7 +775,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_acharya",
@@ -717,7 +795,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_shishya_r1",
@@ -735,7 +815,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_shishya_r2",
@@ -753,7 +835,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_acharya",
@@ -771,7 +855,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_shishya_r1",
@@ -789,7 +875,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_shishya_r2",
@@ -807,7 +895,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_acharya",
@@ -825,7 +915,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_shishya_r1",
@@ -843,7 +935,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_shishya_r2",
@@ -861,7 +955,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_acharya_p2",
@@ -879,7 +975,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_shishya_r1_p2",
@@ -897,7 +995,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s01_shishya_r2_p2",
@@ -915,7 +1015,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_acharya_p2",
@@ -933,7 +1035,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_shishya_r1_p2",
@@ -951,7 +1055,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s02_shishya_r2_p2",
@@ -969,7 +1075,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_acharya_p2",
@@ -987,7 +1095,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_shishya_r1_p2",
@@ -1005,7 +1115,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s03_shishya_r2_p2",
@@ -1023,7 +1135,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_acharya_p2",
@@ -1041,7 +1155,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_shishya_r1_p2",
@@ -1059,7 +1175,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s04_shishya_r2_p2",
@@ -1077,7 +1195,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_acharya_p2",
@@ -1095,7 +1215,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_shishya_r1_p2",
@@ -1113,7 +1235,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s05_shishya_r2_p2",
@@ -1131,7 +1255,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_acharya_p2",
@@ -1149,7 +1275,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_shishya_r1_p2",
@@ -1167,7 +1295,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s06_shishya_r2_p2",
@@ -1185,7 +1315,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_acharya_p2",
@@ -1203,7 +1335,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_shishya_r1_p2",
@@ -1221,7 +1355,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s07_shishya_r2_p2",
@@ -1239,7 +1375,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_acharya_p2",
@@ -1257,7 +1395,9 @@
   "repeat": 0,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_shishya_r1_p2",
@@ -1275,7 +1415,9 @@
   "repeat": 1,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.2_s08_shishya_r2_p2",
@@ -1293,7 +1435,9 @@
   "repeat": 2,
   "pasuram": "1.1.2",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s01_acharya",
@@ -1311,7 +1455,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s01_shishya_r1",
@@ -1329,7 +1475,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s01_shishya_r2",
@@ -1347,7 +1495,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s02_acharya",
@@ -1365,7 +1515,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s02_shishya_r1",
@@ -1383,7 +1535,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s02_shishya_r2",
@@ -1401,7 +1555,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s03_acharya",
@@ -1419,7 +1575,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s03_shishya_r1",
@@ -1437,7 +1595,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s03_shishya_r2",
@@ -1455,7 +1615,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s04_acharya",
@@ -1473,7 +1635,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s04_shishya_r1",
@@ -1491,7 +1655,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s04_shishya_r2",
@@ -1509,7 +1675,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s05_acharya",
@@ -1527,7 +1695,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s05_shishya_r1",
@@ -1545,7 +1715,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s05_shishya_r2",
@@ -1563,7 +1735,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s06_acharya",
@@ -1581,7 +1755,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s06_shishya_r1",
@@ -1599,7 +1775,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s06_shishya_r2",
@@ -1617,7 +1795,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s07_acharya",
@@ -1635,7 +1815,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s07_shishya_r1",
@@ -1653,7 +1835,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s07_shishya_r2",
@@ -1671,7 +1855,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s08_acharya",
@@ -1689,7 +1875,9 @@
   "repeat": 0,
   "pasuram": "1.1.3",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s08_shishya_r1",
@@ -1707,7 +1895,9 @@
   "repeat": 1,
   "pasuram": "1.1.3",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.3_s08_shishya_r2",
@@ -1725,7 +1915,9 @@
   "repeat": 2,
   "pasuram": "1.1.3",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s01_acharya",
@@ -1743,7 +1935,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s01_shishya_r1",
@@ -1761,7 +1955,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s01_shishya_r2",
@@ -1779,7 +1975,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s02_acharya",
@@ -1797,7 +1995,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s02_shishya_r1",
@@ -1815,7 +2015,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s02_shishya_r2",
@@ -1833,7 +2035,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s03_acharya",
@@ -1851,7 +2055,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s03_shishya_r1",
@@ -1869,7 +2075,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s03_shishya_r2",
@@ -1887,7 +2095,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s04_acharya",
@@ -1905,7 +2115,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s04_shishya_r1",
@@ -1923,7 +2135,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s04_shishya_r2",
@@ -1941,7 +2155,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s05_acharya",
@@ -1959,7 +2175,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s05_shishya_r1",
@@ -1977,7 +2195,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s05_shishya_r2",
@@ -1995,7 +2215,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s06_acharya",
@@ -2013,7 +2235,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s06_shishya_r1",
@@ -2031,7 +2255,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s06_shishya_r2",
@@ -2049,7 +2275,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s07_acharya",
@@ -2067,7 +2295,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s07_shishya_r1",
@@ -2085,7 +2315,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s07_shishya_r2",
@@ -2103,7 +2335,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s08_acharya",
@@ -2121,7 +2355,9 @@
   "repeat": 0,
   "pasuram": "1.1.4",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s08_shishya_r1",
@@ -2139,7 +2375,9 @@
   "repeat": 1,
   "pasuram": "1.1.4",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.4_s08_shishya_r2",
@@ -2157,7 +2395,9 @@
   "repeat": 2,
   "pasuram": "1.1.4",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s01_acharya",
@@ -2175,7 +2415,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s01_shishya_r1",
@@ -2193,7 +2435,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s01_shishya_r2",
@@ -2211,7 +2455,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s02_acharya",
@@ -2229,7 +2475,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s02_shishya_r1",
@@ -2247,7 +2495,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s02_shishya_r2",
@@ -2265,7 +2515,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s03_acharya",
@@ -2283,7 +2535,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s03_shishya_r1",
@@ -2301,7 +2555,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s03_shishya_r2",
@@ -2319,7 +2575,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s04_acharya",
@@ -2337,7 +2595,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s04_shishya_r1",
@@ -2355,7 +2615,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s04_shishya_r2",
@@ -2373,7 +2635,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s05_acharya",
@@ -2391,7 +2655,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s05_shishya_r1",
@@ -2409,7 +2675,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s05_shishya_r2",
@@ -2427,7 +2695,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s06_acharya",
@@ -2445,7 +2715,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s06_shishya_r1",
@@ -2463,7 +2735,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s06_shishya_r2",
@@ -2481,7 +2755,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s07_acharya",
@@ -2499,7 +2775,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s07_shishya_r1",
@@ -2517,7 +2795,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s07_shishya_r2",
@@ -2535,7 +2815,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s08_acharya",
@@ -2553,7 +2835,9 @@
   "repeat": 0,
   "pasuram": "1.1.5",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s08_shishya_r1",
@@ -2571,7 +2855,9 @@
   "repeat": 1,
   "pasuram": "1.1.5",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.5_s08_shishya_r2",
@@ -2589,7 +2875,9 @@
   "repeat": 2,
   "pasuram": "1.1.5",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s01_acharya",
@@ -2607,7 +2895,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s01_shishya_r1",
@@ -2625,7 +2915,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s01_shishya_r2",
@@ -2643,7 +2935,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s02_acharya",
@@ -2661,7 +2955,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s02_shishya_r1",
@@ -2679,7 +2975,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s02_shishya_r2",
@@ -2697,7 +2995,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s03_acharya",
@@ -2715,7 +3015,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s03_shishya_r1",
@@ -2733,7 +3035,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s03_shishya_r2",
@@ -2751,7 +3055,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s04_acharya",
@@ -2769,7 +3075,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s04_shishya_r1",
@@ -2787,7 +3095,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s04_shishya_r2",
@@ -2805,7 +3115,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s05_acharya",
@@ -2823,7 +3135,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s05_shishya_r1",
@@ -2841,7 +3155,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s05_shishya_r2",
@@ -2859,7 +3175,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s06_acharya",
@@ -2877,7 +3195,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s06_shishya_r1",
@@ -2895,7 +3215,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s06_shishya_r2",
@@ -2913,7 +3235,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s07_acharya",
@@ -2931,7 +3255,9 @@
   "repeat": 0,
   "pasuram": "1.1.6",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s07_shishya_r1",
@@ -2949,7 +3275,9 @@
   "repeat": 1,
   "pasuram": "1.1.6",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.6_s07_shishya_r2",
@@ -2967,7 +3295,9 @@
   "repeat": 2,
   "pasuram": "1.1.6",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s01_acharya",
@@ -2985,7 +3315,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s01_shishya_r1",
@@ -3003,7 +3335,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s01_shishya_r2",
@@ -3021,7 +3355,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s02_acharya",
@@ -3039,7 +3375,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s02_shishya_r1",
@@ -3057,7 +3395,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s02_shishya_r2",
@@ -3075,7 +3415,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s03_acharya",
@@ -3093,7 +3435,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s03_shishya_r1",
@@ -3111,7 +3455,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s03_shishya_r2",
@@ -3129,7 +3475,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s04_acharya",
@@ -3147,7 +3495,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s04_shishya_r1",
@@ -3165,7 +3515,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s04_shishya_r2",
@@ -3183,7 +3535,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s05_acharya",
@@ -3201,7 +3555,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s05_shishya_r1",
@@ -3219,7 +3575,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s05_shishya_r2",
@@ -3237,7 +3595,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s06_acharya",
@@ -3255,7 +3615,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s06_shishya_r1",
@@ -3273,7 +3635,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s06_shishya_r2",
@@ -3291,7 +3655,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s07_acharya",
@@ -3309,7 +3675,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s07_shishya_r1",
@@ -3327,7 +3695,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s07_shishya_r2",
@@ -3345,7 +3715,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s08_acharya",
@@ -3363,7 +3735,9 @@
   "repeat": 0,
   "pasuram": "1.1.7",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s08_shishya_r1",
@@ -3381,7 +3755,9 @@
   "repeat": 1,
   "pasuram": "1.1.7",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.7_s08_shishya_r2",
@@ -3399,7 +3775,9 @@
   "repeat": 2,
   "pasuram": "1.1.7",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s01_acharya",
@@ -3417,7 +3795,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s01_shishya_r1",
@@ -3435,7 +3815,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s01_shishya_r2",
@@ -3453,7 +3835,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s02_acharya",
@@ -3471,7 +3855,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s02_shishya_r1",
@@ -3489,7 +3875,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s02_shishya_r2",
@@ -3507,7 +3895,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s03_acharya",
@@ -3525,7 +3915,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s03_shishya_r1",
@@ -3543,7 +3935,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s03_shishya_r2",
@@ -3561,7 +3955,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s04_acharya",
@@ -3579,7 +3975,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s04_shishya_r1",
@@ -3597,7 +3995,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s04_shishya_r2",
@@ -3615,7 +4015,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s05_acharya",
@@ -3633,7 +4035,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s05_shishya_r1",
@@ -3651,7 +4055,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s05_shishya_r2",
@@ -3669,7 +4075,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s06_acharya",
@@ -3687,7 +4095,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s06_shishya_r1",
@@ -3705,7 +4115,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s06_shishya_r2",
@@ -3723,7 +4135,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s07_acharya",
@@ -3741,7 +4155,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s07_shishya_r1",
@@ -3759,7 +4175,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s07_shishya_r2",
@@ -3777,7 +4195,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s08_acharya",
@@ -3795,7 +4215,9 @@
   "repeat": 0,
   "pasuram": "1.1.8",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s08_shishya_r1",
@@ -3813,7 +4235,9 @@
   "repeat": 1,
   "pasuram": "1.1.8",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.8_s08_shishya_r2",
@@ -3831,7 +4255,9 @@
   "repeat": 2,
   "pasuram": "1.1.8",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s01_acharya",
@@ -3849,7 +4275,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s01_shishya_r1",
@@ -3867,7 +4295,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s01_shishya_r2",
@@ -3885,7 +4315,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s02_acharya",
@@ -3903,7 +4335,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s02_shishya_r1",
@@ -3921,7 +4355,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s02_shishya_r2",
@@ -3939,7 +4375,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s03_acharya",
@@ -3957,7 +4395,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s03_shishya_r1",
@@ -3975,7 +4415,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s03_shishya_r2",
@@ -3993,7 +4435,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s04_acharya",
@@ -4011,7 +4455,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s04_shishya_r1",
@@ -4029,7 +4475,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s04_shishya_r2",
@@ -4047,7 +4495,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s05_acharya",
@@ -4065,7 +4515,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s05_shishya_r1",
@@ -4083,7 +4535,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s05_shishya_r2",
@@ -4101,7 +4555,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s06_acharya",
@@ -4119,7 +4575,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s06_shishya_r1",
@@ -4137,7 +4595,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s06_shishya_r2",
@@ -4155,7 +4615,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s07_acharya",
@@ -4173,7 +4635,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s07_shishya_r1",
@@ -4191,7 +4655,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s07_shishya_r2",
@@ -4209,7 +4675,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s08_acharya",
@@ -4227,7 +4695,9 @@
   "repeat": 0,
   "pasuram": "1.1.9",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s08_shishya_r1",
@@ -4245,7 +4715,9 @@
   "repeat": 1,
   "pasuram": "1.1.9",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.9_s08_shishya_r2",
@@ -4263,7 +4735,9 @@
   "repeat": 2,
   "pasuram": "1.1.9",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s01_acharya",
@@ -4281,7 +4755,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s01_shishya_r1",
@@ -4299,7 +4775,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s01_shishya_r2",
@@ -4317,7 +4795,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s02_acharya",
@@ -4335,7 +4815,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s02_shishya_r1",
@@ -4353,7 +4835,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s02_shishya_r2",
@@ -4371,7 +4855,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s03_acharya",
@@ -4389,7 +4875,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s03_shishya_r1",
@@ -4407,7 +4895,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s03_shishya_r2",
@@ -4425,7 +4915,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s04_acharya",
@@ -4443,7 +4935,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s04_shishya_r1",
@@ -4461,7 +4955,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s04_shishya_r2",
@@ -4479,7 +4975,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s05_acharya",
@@ -4497,7 +4995,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s05_shishya_r1",
@@ -4515,7 +5015,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s05_shishya_r2",
@@ -4533,7 +5035,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s06_acharya",
@@ -4551,7 +5055,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s06_shishya_r1",
@@ -4569,7 +5075,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s06_shishya_r2",
@@ -4587,7 +5095,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s07_acharya",
@@ -4605,7 +5115,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s07_shishya_r1",
@@ -4623,7 +5135,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s07_shishya_r2",
@@ -4641,7 +5155,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s08_acharya",
@@ -4659,7 +5175,9 @@
   "repeat": 0,
   "pasuram": "1.1.10",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s08_shishya_r1",
@@ -4677,7 +5195,9 @@
   "repeat": 1,
   "pasuram": "1.1.10",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.10_s08_shishya_r2",
@@ -4695,7 +5215,9 @@
   "repeat": 2,
   "pasuram": "1.1.10",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_acharya",
@@ -4713,7 +5235,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_shishya_r1",
@@ -4731,7 +5255,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_shishya_r2",
@@ -4749,7 +5275,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_acharya",
@@ -4767,7 +5295,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_shishya_r1",
@@ -4785,7 +5315,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_shishya_r2",
@@ -4803,7 +5335,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_acharya",
@@ -4821,7 +5355,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_shishya_r1",
@@ -4839,7 +5375,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_shishya_r2",
@@ -4857,7 +5395,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_acharya",
@@ -4875,7 +5415,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_shishya_r1",
@@ -4893,7 +5435,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_shishya_r2",
@@ -4911,7 +5455,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_acharya",
@@ -4929,7 +5475,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_shishya_r1",
@@ -4947,7 +5495,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_shishya_r2",
@@ -4965,7 +5515,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_acharya",
@@ -4983,7 +5535,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_shishya_r1",
@@ -5001,7 +5555,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_shishya_r2",
@@ -5019,7 +5575,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_acharya",
@@ -5037,7 +5595,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_shishya_r1",
@@ -5055,7 +5615,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_shishya_r2",
@@ -5073,7 +5635,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_acharya",
@@ -5091,7 +5655,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_shishya_r1",
@@ -5109,7 +5675,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_shishya_r2",
@@ -5127,7 +5695,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_acharya_p2",
@@ -5145,7 +5715,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_shishya_r1_p2",
@@ -5163,7 +5735,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s01_shishya_r2_p2",
@@ -5181,7 +5755,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_acharya_p2",
@@ -5199,7 +5775,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_shishya_r1_p2",
@@ -5217,7 +5795,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s02_shishya_r2_p2",
@@ -5235,7 +5815,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_acharya_p2",
@@ -5253,7 +5835,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_shishya_r1_p2",
@@ -5271,7 +5855,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s03_shishya_r2_p2",
@@ -5289,7 +5875,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_acharya_p2",
@@ -5307,7 +5895,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_shishya_r1_p2",
@@ -5325,7 +5915,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s04_shishya_r2_p2",
@@ -5343,7 +5935,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_acharya_p2",
@@ -5361,7 +5955,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_shishya_r1_p2",
@@ -5379,7 +5975,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s05_shishya_r2_p2",
@@ -5397,7 +5995,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_acharya_p2",
@@ -5415,7 +6015,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_shishya_r1_p2",
@@ -5433,7 +6035,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s06_shishya_r2_p2",
@@ -5451,7 +6055,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_acharya_p2",
@@ -5469,7 +6075,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_shishya_r1_p2",
@@ -5487,7 +6095,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s07_shishya_r2_p2",
@@ -5505,7 +6115,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_acharya_p2",
@@ -5523,7 +6135,9 @@
   "repeat": 0,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_shishya_r1_p2",
@@ -5541,7 +6155,9 @@
   "repeat": 1,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.11_s08_shishya_r2_p2",
@@ -5559,7 +6175,9 @@
   "repeat": 2,
   "pasuram": "1.1.11",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_acharya",
@@ -5577,7 +6195,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_shishya_r1",
@@ -5595,7 +6215,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_shishya_r2",
@@ -5613,7 +6235,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_acharya",
@@ -5631,7 +6255,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_shishya_r1",
@@ -5649,7 +6275,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_shishya_r2",
@@ -5667,7 +6295,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_acharya",
@@ -5685,7 +6315,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_shishya_r1",
@@ -5703,7 +6335,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_shishya_r2",
@@ -5721,7 +6355,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_acharya",
@@ -5739,7 +6375,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_shishya_r1",
@@ -5757,7 +6395,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_shishya_r2",
@@ -5775,7 +6415,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_acharya",
@@ -5793,7 +6435,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_shishya_r1",
@@ -5811,7 +6455,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_shishya_r2",
@@ -5829,7 +6475,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_acharya",
@@ -5847,7 +6495,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_shishya_r1",
@@ -5865,7 +6515,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_shishya_r2",
@@ -5883,7 +6535,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_acharya",
@@ -5901,7 +6555,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_shishya_r1",
@@ -5919,7 +6575,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_shishya_r2",
@@ -5937,7 +6595,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_acharya",
@@ -5955,7 +6615,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_shishya_r1",
@@ -5973,7 +6635,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_shishya_r2",
@@ -5991,7 +6655,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 1
+  "pass": 1,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_acharya_p2",
@@ -6009,7 +6675,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_shishya_r1_p2",
@@ -6027,7 +6695,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s01_shishya_r2_p2",
@@ -6045,7 +6715,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 1,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_acharya_p2",
@@ -6063,7 +6735,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_shishya_r1_p2",
@@ -6081,7 +6755,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s02_shishya_r2_p2",
@@ -6099,7 +6775,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 2,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_acharya_p2",
@@ -6117,7 +6795,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_shishya_r1_p2",
@@ -6135,7 +6815,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s03_shishya_r2_p2",
@@ -6153,7 +6835,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 3,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_acharya_p2",
@@ -6171,7 +6855,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_shishya_r1_p2",
@@ -6189,7 +6875,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s04_shishya_r2_p2",
@@ -6207,7 +6895,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 4,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_acharya_p2",
@@ -6225,7 +6915,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_shishya_r1_p2",
@@ -6243,7 +6935,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s05_shishya_r2_p2",
@@ -6261,7 +6955,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 5,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_acharya_p2",
@@ -6279,7 +6975,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_shishya_r1_p2",
@@ -6297,7 +6995,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s06_shishya_r2_p2",
@@ -6315,7 +7015,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 6,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_acharya_p2",
@@ -6333,7 +7035,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_shishya_r1_p2",
@@ -6351,7 +7055,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s07_shishya_r2_p2",
@@ -6369,7 +7075,9 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 7,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_acharya_p2",
@@ -6387,7 +7095,9 @@
   "repeat": 0,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_shishya_r1_p2",
@@ -6405,7 +7115,9 @@
   "repeat": 1,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  },
  {
   "id": "tiruppallandu_1.1.12_s08_shishya_r2_p2",
@@ -6423,6 +7135,8 @@
   "repeat": 2,
   "pasuram": "1.1.12",
   "seg": 8,
-  "pass": 2
+  "pass": 2,
+  "dur_unit": "syllable",
+  "phrase_end_matrai": 0.0
  }
 ]

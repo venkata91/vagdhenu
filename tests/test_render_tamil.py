@@ -8,11 +8,12 @@ from conftest import load_render
 PADA = "‡பல்லாண்டு பல்லாண்டு பல்லாயிரத்தாண்டு ⋆"
 
 
-def tmp_bank_ta(tmp_path, sps=0.3):
+def tmp_bank_ta(tmp_path, sps=0.3, spm=None):
     d = tmp_path / "bank"; d.mkdir(exist_ok=True)
     sf.write(str(d / "ta_santhai.wav"), np.zeros(3 * 24000, np.float32), 24000)
     bank = {"santhai": {"lang": "ta", "mode": "santhai", "wav": "ta_santhai.wav",
-                        "ref_text": "பல்லாண்டு பல்லாண்டு ⋆", "sec_per_syll": sps}}
+                        "ref_text": "பல்லாண்டு பல்லாண்டு ⋆", "sec_per_syll": sps,
+                        "sec_per_matrai": spm}}
     (d / "bank_ta.json").write_text(json.dumps(bank, ensure_ascii=False), encoding="utf-8")
     return str(d / "bank_ta.json")
 
@@ -133,3 +134,17 @@ def test_readme_sequence_runs_into_fresh_dir(tmp_path):
                        capture_output=True, text=True)
     assert r.returncode == 0, r.stderr
     assert len([f for f in os.listdir(fresh / "tamil") if f.endswith(".wav")]) == 12
+
+
+def test_matrai_unit_drives_duration_with_phrase_end_hold(tmp_path):
+    mod, st = load_render(tmp_path / "r", ["--bank_ta", tmp_bank_ta(tmp_path, spm=0.2)])
+    mod.render_clip(clip(dur_unit="matrai", phrase_end_matrai=1.5))
+    m = TS.n_matrai(TT.model_text(PADA))
+    assert m == 19.5   # 5 + 5 + பல்லாயிரத்தாண்டு 9.5
+    assert st.infer_calls[0]["fix_duration"] == pytest.approx(3.0 + (m + 1.5) * 0.2)
+
+
+def test_phrase_end_hold_ignored_in_syllable_unit(tmp_path):
+    mod, st = load_render(tmp_path / "r", ["--bank_ta", tmp_bank_ta(tmp_path)])
+    mod.render_clip(clip(dur_unit="syllable", phrase_end_matrai=1.5))
+    assert st.infer_calls[0]["fix_duration"] == pytest.approx(3.0 + 12 * 0.3)

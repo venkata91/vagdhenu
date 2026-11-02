@@ -111,7 +111,7 @@ def test_shard_entries_are_render_compatible_and_additive():
         assert s["lang"] == "ta" and s["no_sandhi"] is True and isinstance(s["seed"], int)
         assert s["out"] == os.path.join("out/u", s["id"] + ".wav")
         assert set(s) <= {"id", "meter", "padas", "seed", "no_sandhi", "out", "lang", "mode", "role", "group",
-                          "repeat", "pasuram", "seg", "pass"}
+                          "repeat", "pasuram", "seg", "pass", "dur_unit", "phrase_end_matrai"}
 
 
 def test_marked_pasurams_are_recited_twice_by_default():
@@ -159,6 +159,8 @@ def test_cli_rejects_bad_mode():
     ('{"gaps": {"nope": 0.1}}', "unknown gap kind 'nope'"),
     ('{"santhai_repeats": 0}', "santhai_repeats"),
     ('{"alternate_unit": "word"}', "alternate_unit"),
+    ('{"duration_unit": "mora"}', "duration_unit"),
+    ('{"phrase_end_matrai": -1}', "phrase_end_matrai"),
     ('{not json', "invalid JSON"),
 ])
 def test_cli_rejects_bad_config(tmp_path, cfg, msg):

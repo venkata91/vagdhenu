@@ -1,9 +1,10 @@
-"""Tamil eḻuttu / syllable count / asai (nēr-nirai) analysis. Pure stdlib.
+"""Tamil eḻuttu / syllable count / mātrai count / asai (nēr-nirai) analysis. Pure stdlib.
 
 n_syllables = vowel nuclei (uyir + uyirmey); mey (consonant + ்) and āytam (ஃ) are not counted. This is
 the Tamil counterpart of render.py's n_aksharas and drives fix_duration = ref_len + n * sec_per_syll.
+n_matrai = traditional length in mātrai: kuṟil 1, neṭil 2, oṟṟu / āytam ½ (duration_unit "matrai").
 asai: nēr = one kuṟil/neṭil (+ following oṟṟu); nirai = kuṟil + kuṟil/neṭil (+ following oṟṟu).
-Not modelled: kuṟṟiyalukaram, aḷapeṭai."""
+Not modelled: kuṟṟiyalukaram, aikārakkuṟukkam, aḷapeṭai."""
 
 PULLI = "\u0BCD"
 AYTAM = "ஃ"
@@ -45,6 +46,21 @@ def eluttu(word):
 
 def n_syllables(s):
     return sum(1 for _, k in eluttu(s) if k != "ottru")
+
+
+MATRAI = {"kuril": 1.0, "nedil": 2.0, "ottru": 0.5}
+DURATION_UNITS = ("syllable", "matrai")
+
+
+def n_matrai(s):
+    return sum(MATRAI[k] for _, k in eluttu(s))
+
+
+def count_units(s, unit):
+    """Duration units of `s`: 'syllable' (vowel nuclei) or 'matrai'."""
+    if unit not in DURATION_UNITS:
+        raise ValueError(f"duration unit must be one of {DURATION_UNITS} (got {unit!r})")
+    return n_matrai(s) if unit == "matrai" else n_syllables(s)
 
 
 def asai(word):

@@ -1,8 +1,8 @@
 {
- "_doc": "Tamil chant references (author's consented recordings). Selected only by shards with lang \"ta\" (tamil_plan.py); never read for Sanskrit. To add a clip: put the wav beside this file and fill ref_text + sec_per_syll in its entry — no code change. Half-reference rule: ref_text must match the wav EXACTLY and the wav must be <=15 s. sec_per_syll: measure with `python src/tamil_bank.py sps --wav <wav> --ref_text '<text>'`; null = not yet measured (render fails loudly).",
+ "_doc": "Tamil chant references (author's consented recordings). Selected only by shards with lang \"ta\" (tamil_plan.py); never read for Sanskrit. To add a clip: put the wav beside this file and fill ref_text, sec_per_syll and sec_per_matrai in its entry — no code change. Half-reference rule: ref_text must match the wav EXACTLY and the wav must be <=15 s. sec_per_syll (plan duration_unit \"syllable\") and sec_per_matrai (duration_unit \"matrai\"): measure both with `python src/tamil_bank.py sps --wav <wav> --ref_text '<text>'` (its sps and spm); null = not yet measured (render fails loudly).",
  "_template": {"lang": "ta", "mode": "santhai | goshti", "wav": "<file in this dir>.wav",
-               "ref_text": "<exact Tamil words audible in the wav>", "sec_per_syll": null, "dur_s": null, "sr": 24000,
+               "ref_text": "<exact Tamil words audible in the wav>", "sec_per_syll": null, "sec_per_matrai": null, "dur_s": null, "sr": 24000,
                "source": "author's consented recording, <date>"},
- "santhai": {"lang": "ta", "mode": "santhai", "wav": "ta_santhai.wav", "ref_text": "", "sec_per_syll": null},
- "goshti":  {"lang": "ta", "mode": "goshti",  "wav": "ta_goshti.wav",  "ref_text": "", "sec_per_syll": null}
+ "santhai": {"lang": "ta", "mode": "santhai", "wav": "ta_santhai.wav", "ref_text": "", "sec_per_syll": null, "sec_per_matrai": null},
+ "goshti":  {"lang": "ta", "mode": "goshti",  "wav": "ta_goshti.wav",  "ref_text": "", "sec_per_syll": null, "sec_per_matrai": null}
 }

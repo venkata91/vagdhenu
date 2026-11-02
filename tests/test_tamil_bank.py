@@ -58,6 +58,17 @@ def test_clip_sps_fills_unmeasured_entry(tmp_path):
     assert r.sps == 0.31
 
 
+def test_matrai_unit_reads_sec_per_matrai(tmp_path):
+    bank = tmp_bank(tmp_path, sec_per_matrai=0.18)
+    r = TB.resolve_ref(bank, str(tmp_path), {"meter": "santhai", "dur_unit": "matrai"})
+    assert (r.sps, r.unit) == (0.18, "matrai")
+    assert TB.resolve_ref(bank, str(tmp_path), {"meter": "santhai"}).unit == "syllable"
+    with pytest.raises(TB.TamilBankError, match="sec_per_matrai not measured"):
+        TB.resolve_ref(tmp_bank(tmp_path), str(tmp_path), {"meter": "santhai", "dur_unit": "matrai"})
+    with pytest.raises(TB.TamilBankError, match="dur_unit"):
+        TB.resolve_ref(bank, str(tmp_path), {"meter": "santhai", "dur_unit": "mora"})
+
+
 def test_shipped_bank_parses_and_both_entries_fail_loudly():
     path = os.path.join(RB, "bank_ta.json")
     bank = TB.load_bank(path)
@@ -75,7 +86,9 @@ def test_no_tamil_wavs_ship():
 
 def test_provisional_sps(tmp_path):
     r = TB.provisional_sps(wav(tmp_path / "a.wav", 6.0), "பல்லாண்டு பல்லாண்டு")
-    assert r == {"dur_s": 6.0, "nsyll": 6, "sps": round(6.0 / 6 * 1.10, 3), "warning": None}
+    # பல்லாண்டு = ப 1 + ல் ½ + லா 2 + ண் ½ + டு 1 = 5 mātrai
+    assert r == {"dur_s": 6.0, "nsyll": 6, "sps": round(6.0 / 6 * 1.10, 3),
+                 "nmatrai": 10.0, "spm": round(6.0 / 10 * 1.10, 3), "warning": None}
     r = TB.provisional_sps(wav(tmp_path / "b.wav", 16.0), "பல்லாண்டு பல்லாண்டு")
     assert r["dur_s"] == 16.0 and "15" in r["warning"]
     with pytest.raises(TB.TamilBankError, match="no Tamil syllables"):

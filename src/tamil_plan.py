@@ -26,6 +26,8 @@ DEFAULT_CONFIG = {
     "base_seed": 60,
     "repeat_marked": True,
     "sections": ["pasuram"],
+    "duration_unit": "syllable",
+    "phrase_end_matrai": 0.0,
 }
 
 
@@ -81,6 +83,11 @@ def _validate(cfg, where):
             bad(f"refs.{k} must be a non-empty bank key")
     if isinstance(cfg["base_seed"], bool) or not isinstance(cfg["base_seed"], int):
         bad("base_seed must be an integer")
+    if cfg["duration_unit"] not in TS.DURATION_UNITS:
+        bad(f"duration_unit must be one of {list(TS.DURATION_UNITS)} (got {cfg['duration_unit']!r})")
+    h = cfg["phrase_end_matrai"]
+    if isinstance(h, bool) or not isinstance(h, (int, float)) or h < 0:
+        bad(f"phrase_end_matrai must be a number >= 0 (got {h!r})")
     if not isinstance(cfg["sections"], list) or not cfg["sections"] \
             or any(s not in TT.NUMBERED for s in cfg["sections"]):
         bad(f"sections must be a non-empty list of {list(TT.NUMBERED)}")
@@ -132,14 +139,15 @@ def build_plan(work, mode, config, unit_dir):
                     us.append({"id": uid, "seg": si, "role": role, "group": group, "repeat": rep, "pass": ps,
                                "ref": config["refs"][group if group else role],
                                "seed": config["base_seed"] + zlib.crc32(uid.encode()) % 100000,
-                               "nsyll": TS.n_syllables(seg)})
+                               "nsyll": TS.n_syllables(seg), "nmatrai": TS.n_matrai(seg)})
         for j, u in enumerate(us):
             kind = _gap_kind(mode, config, us, j)
             u["gap_after_s"] = config["gaps"][kind]; u["gap_kind"] = kind
             shard.append({"id": u["id"], "meter": u["ref"], "padas": [segs[u["seg"] - 1]], "seed": u["seed"],
                           "no_sandhi": True, "out": os.path.join(unit_dir, u["id"] + ".wav"), "lang": "ta",
                           "mode": mode, "role": u["role"], "group": u["group"], "repeat": u["repeat"],
-                          "pasuram": sec.num, "seg": u["seg"], "pass": u["pass"]})
+                          "pasuram": sec.num, "seg": u["seg"], "pass": u["pass"],
+                          "dur_unit": config["duration_unit"], "phrase_end_matrai": config["phrase_end_matrai"]})
         pasurams.append({"kind": sec.kind, "num": sec.num, "marked": sec.marked, "file": f"{wid}_{tag}.{mode}.wav",
                          "segments": segs, "units": us})
     plan = {"format": FORMAT, "work_id": wid, "title": work.meta["title"], "fixture": os.path.basename(work.path),

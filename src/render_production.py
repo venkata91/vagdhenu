@@ -2,7 +2,10 @@
 Gold pipeline: voice_armA_ema (F5/IndicF5 DiT) + nvidia BigVGAN-v2 vocoder (fine-tuned EMA).
 BigVGAN-v2 is the production vocoder (vocos left only the long-vowel phase 'shiver'; BigVGAN removes it).
 All paths durable (CHAMPION_2026-06-11), no /tmp dependency. See CHAMPION MANIFEST for provenance."""
-import os, sys, glob, json, argparse, numpy as np, soundfile as sf, torch
+import os, sys, glob, json, argparse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import device as DEV   # before torch: enables the MPS CPU fallback
+import numpy as np, soundfile as sf, torch
 PROD = "<PROD>"
 sys.path.insert(0, PROD)
 import prep_text as PT, bigvgan
@@ -218,14 +221,16 @@ ap.add_argument("--double_bands", type=float, default=0.0, help="overlay a 2nd r
 ap.add_argument("--double", type=float, default=0.0, help="self-double: phase-aligned pitch-shifted copy (semitones, e.g. -0.08) for a tight 2-voice sound")
 ap.add_argument("--double_mix", type=float, default=0.72, help="level of the doubled 2nd voice (0..1). lower = subtler shadow, higher = co-equal reciter")
 ap.add_argument("--tanpura", type=float, default=0.0, help="mix a synthesized tanpura drone tuned to the chant Sa at this level (e.g. 0.08)")
+ap.add_argument("--device", default="auto", choices=DEV.CHOICES, help="auto = cuda, else mps (Apple silicon), else cpu")
 a = ap.parse_args(); SR = 24000
+DEVICE = DEV.pick_device(a.device, torch)
 CFG = dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=512, conv_layers=4)
 vocab = glob.glob(os.path.expanduser("~/.cache/huggingface/hub/models--ai4bharat--IndicF5/snapshots/*/checkpoints/vocab.txt"))[0]
-cfm = load_model(DiT, CFG, mel_spec_type="vocos", vocab_file=vocab, device="cuda")
+cfm = load_model(DiT, CFG, mel_spec_type="vocos", vocab_file=vocab, device=DEVICE)
 ck = torch.load(a.voice, map_location="cpu", weights_only=True)
 ema = {k.replace("ema_model.", ""): v for k, v in ck["ema_model_state_dict"].items() if k not in ("initted", "step")}
 cfm.load_state_dict(ema, strict=False); cfm.eval()
-real_voc = load_vocoder("vocos")
+real_voc = load_vocoder("vocos", device=DEVICE)
 class Cap:
     def __init__(s, r): s.r = r; s.last = None
     def decode(s, m): s.last = m.detach().cpu().numpy(); return s.r.decode(m)
@@ -233,10 +238,10 @@ cap = Cap(real_voc)
 # --- PRODUCTION VOCODER: nvidia BigVGAN-v2 (NOT the VITS2 Generator) ---
 g = bigvgan.BigVGAN.from_pretrained("nvidia/bigvgan_v2_24khz_100band_256x", use_cuda_kernel=False)
 bsd = torch.load(a.voc, map_location="cpu"); bsd = bsd.get("model", bsd)
-g.load_state_dict(bsd); g.remove_weight_norm(); g = g.cuda().eval()
+g.load_state_dict(bsd); g.remove_weight_norm(); g = g.to(DEVICE).eval()
 for p in g.parameters(): p.requires_grad = False
 def bvgan(mel):
-    m = torch.from_numpy(mel).cuda()
+    m = torch.from_numpy(mel).to(DEVICE)
     with torch.no_grad():
         if m.dim()==3 and m.shape[1]!=100 and m.shape[2]==100: m = m.transpose(1,2)
         return g(m).squeeze().cpu().numpy().astype(np.float32)
@@ -354,7 +359,7 @@ for i, p in enumerate(PIECES):
     for att in range(4):
         torch.manual_seed(a.seed + att)   # all chunks start from the vetted base seed; att only on retry (was seed+i*5 -> chunk1 landed on bad seed 55)
         _fixd = (REF_LEN_SEC + NSYLL[i]*a.sec_per_syll) if (a.sec_per_syll > 0 and NSYLL) else None
-        w, sr, _ = infer_process(ref_audio, ref_t, p, cfm, cap, mel_spec_type="vocos", speed=a.speed, nfe_step=a.nfe, cfg_strength=a.cfg, device="cuda", fix_duration=_fixd)
+        w, sr, _ = infer_process(ref_audio, ref_t, p, cfm, cap, mel_spec_type="vocos", speed=a.speed, nfe_step=a.nfe, cfg_strength=a.cfg, device=DEVICE, fix_duration=_fixd)
         w = np.array(w, dtype=np.float32)
         if np.abs(w).max() > 1.5: w = w/32768.0
         if float(np.sqrt((w**2).mean())) > 0.04: au = w; break
